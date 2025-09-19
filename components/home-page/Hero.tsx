@@ -13,11 +13,11 @@ const Hero = () => {
       <div className="min-h-screen bg-[#00000040] w-full flex flex-col justify-center items-center">
         <div className="flex flex-col lg:w-3/4 mx-auto text-center">
 
-          {/* Group 1: First + Second split texts */}
-          <div className="flex flex-col items-center">
+          {/* Group 1: First + Second split texts with reduced spacing */}
+          <div className="flex flex-col items-center -space-y-2 md:-space-y-3">
             <SplitText
               text="Clé Blanche"
-              className={`text-4xl md:text-5xl ${fontTitle.className}`}
+              className={`text-4xl md:text-5xl ${fontTitle.className} leading-tight`}
               delay={80}
               duration={1.8}
               ease="power3.out"
@@ -39,7 +39,7 @@ const Hero = () => {
 
             <SplitText
               text="Une Résidence d'Excellence"
-              className={`text-4xl md:text-5xl ${fontTitle.className}`}
+              className={`text-4xl md:text-5xl ${fontTitle.className} leading-tight`}
               delay={100}
               duration={1.8}
               ease="power3.out"
@@ -60,7 +60,7 @@ const Hero = () => {
             />
             <SplitText
               text="au cœur de Souissi"
-              className={`text-4xl md:text-5xl ${fontTitle.className}`}
+              className={`text-4xl md:text-5xl ${fontTitle.className} leading-tight`}
               delay={100}
               duration={1.8}
               ease="power3.out"
@@ -82,10 +82,10 @@ const Hero = () => {
           </div>
 
           {/* Group 2: Third + Fourth split texts with reduced spacing */}
-          <div className="flex flex-col items-center mt-1">
+          <div className="flex flex-col items-center mt-4">
             <SplitText
               text="Deuxième et dernière tranche. Une opportunité unique."
-              className={`text-lg md:text-xl lg:text-2xl font-extralight tracking-wider max-w-4xl mx-auto leading-relaxed ${fontTitle.className} font-semibold`}
+              className={`text-lg md:text-xl lg:text-2xl font-extralight tracking-wider max-w-4xl mx-auto leading-snug ${fontTitle.className} font-semibold`}
               delay={120}
               duration={2.0}
               ease="power2.out"
