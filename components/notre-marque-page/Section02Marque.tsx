@@ -30,7 +30,7 @@ const Section02Marque = () => {
           */}
           <div className="w-full max-w-md md:max-w-none md:h-[450px] flex items-center">
             <Image
-              src={"/chapitre-2.webp"}
+              src={"/chapitre22.webp"}
               alt="Clé Blanche résidence"
               className="w-full h-auto md:h-full object-cover rounded-md"
               width={450}

@@ -41,7 +41,7 @@ const Section05Marque = () => {
   ];
 
   return (
-    <div className="my-10 md:my-24 px-4 flex-1">
+    <div className="md:my-24 px-4 flex-1">
       <div
         className={`grid grid-cols-1 ${
           isMobile ? "flex-col" : "flex-row"
