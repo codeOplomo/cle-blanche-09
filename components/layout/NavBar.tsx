@@ -24,10 +24,10 @@ const NavBar = () => {
     <div className="fixed right-1/2 mt-4 translate-x-1/2 w-full px-5 z-50">
       <div className="w-full container mx-auto p-4 text-main-black bg-[#e5dac5] border border-[#e5dac5] font-light flex justify-end relative items-center">
         {/* Logo */}
-        <Link href={"/"} className="absolute left-0 -bottom-3">
+        <Link href={"/"} className="absolute left-0  -bottom-3">
           <Image
             src={"/logo-main.png"}
-            style={{ position: "relative", left: -2 }}
+            style={{ position: "relative", left: -2 , top: 1 }}
             className="object-cover"
             alt="Logo"
             width={155}
@@ -35,8 +35,8 @@ const NavBar = () => {
           />
         </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-4 lg:gap-5">
+  {/* Desktop Navigation */}
+  <div className="hidden lg:flex items-center gap-4 lg:gap-5">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -56,8 +56,8 @@ const NavBar = () => {
           </Link>
         </div>
 
-        {/* Mobile Navigation */}
-        <div className="md:hidden flex justify-end">
+  {/* Mobile Navigation */}
+  <div className="lg:hidden flex justify-end">
           <Sheet>
             <SheetTrigger className="text-main-black">
               <Menu className="w-6 h-6" />

@@ -60,7 +60,7 @@ const FeaturesGrid = () => {
     >
       <h2
         data-aos="fade-up"
-        className={`text-center lg:text-[20px] lg:text-[40px] text-white mb-8 md:mb-12 px-4 ${fontTitle.className}`}
+        className={`text-center text-3xl md:text-[58px] text-white mb-8 md:mb-12 px-4 ${fontTitle.className}`}
       >
         Clé Blanche Chapitre II
       </h2>
@@ -72,10 +72,10 @@ const FeaturesGrid = () => {
             className="flex flex-col items-center justify-center gap-1 md:gap-2 p-3 md:p-4  shadow-sm bg-white hover:shadow-md transition-shadow duration-300 h-full text-center"
           >
             <feature.icon className="w-7 h-7 md:w-8 md:h-8 text-white bg-main p-1.5 flex-shrink-0" />
-            <h3 className="text-[20px] font-semibold leading-none text-center">
+            <h3 className="text-sm md:text-[20px] font-semibold leading-none text-center">
               {feature.title}
             </h3>
-            <p className="text-[20px]  text-gray-600 leading-relaxed text-center">
+            <p className="text-sm md:text-[20px]  text-gray-600 leading-relaxed text-center">
               {feature.description}
             </p>
           </div>

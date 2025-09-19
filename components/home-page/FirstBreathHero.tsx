@@ -4,10 +4,10 @@ const FirstBreathHero = () => {
   return (
     <>
       <div className="py-12 gap-10  z-10">
-        <div className="flex flex-col gap-5 lg:w-3/4 text-center my-4 container mx-auto text-lg">
+        <div className="flex flex-col gap-5 lg:w-3/4 text-center my-4 container mx-auto text-sm md:text-[20px] px-4">
           <h2
             data-aos="fade-up"
-            className={`lg:text-[20px] lg:text-[40px] text-main-black ${fontTitle.className}`}
+            className={`text-3xl md:text-[58px]  text-main-black ${fontTitle.className}`}
           >
             Saraya Holding & A.Lazrak Group
             <span className="block">Un partenariat d’excellence</span>

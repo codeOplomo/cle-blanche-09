@@ -6,9 +6,9 @@ import Image from "next/image";
 const Prensetation = () => {
   return (
     <div className="container mx-auto my-12 grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
-      <div data-aos="fade-up" className="flex flex-col gap-4 p-4 text-[16px]">
+      <div data-aos="fade-up" className="flex flex-col gap-4 p-4 text-sm md:text-[20px]">
         <h2
-          className={`lg:text-[20px] lg:text-[40px] text-main-black ${fontTitle.className} leading-none`}
+          className={`text-3xl md:text-[58px] text-main-black ${fontTitle.className} leading-none`}
         >
           L&apos;Art de conjuguer <br /> style de vie urbain<br />  et sérénité
         </h2>
@@ -33,7 +33,7 @@ const Prensetation = () => {
           pleinement : lumière naturelle, volumes généreux, circulation fluide
           entre intérieur et extérieur.
         </p>
-        <p className={`text-2xl`}>Un nouveau chapitre et l’excellence en héritage</p>
+        <p className={`text-xl md:text-3xl`}>Un nouveau chapitre et l’excellence en héritage</p>
         <p>
           Dans la continuité de la première phase, le second chapitre Clé
           Blanche Souissi s&apos;inscrit dans la même philosophie

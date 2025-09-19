@@ -51,7 +51,7 @@ const HowCanHelpYou = () => {
         data-aos="fade-up"
       >
         <h2
-          className={`lg:text-[20px] lg:text-[40px] text-main-black ${fontTitle.className} leading-none`}
+          className={`text-3xl md:text-[58px] text-main-black ${fontTitle.className} leading-none`}
         >
           Une intimité préservée. Un large éventail de surfaces
         </h2>

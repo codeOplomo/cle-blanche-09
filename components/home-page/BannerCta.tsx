@@ -14,12 +14,12 @@ const BannerCta = () => {
       <div className="py-12 w-full h-full  bg-[#0000008c] transition-opacity duration-700">
         <div className="container mx-auto text-white px-5">
           <div className="flex flex-col gap-1 items-center text-center my-12 " data-aos="fade-up">
-            <p className={`lg:text-[20px] lg:text-[40px] text-center text-white ${fontTitle.className}`} style={{ lineHeight: 1.5 }}>
+            <p className={`text-3xl md:text-[58px] text-center text-white ${fontTitle.className}`} style={{ lineHeight: 1.5 }}>
               <span>Deuxième et dernière phase</span>
               <br />
-              <span style={{ display: 'block', marginTop: '-0.5em' }}>Une opportunité unique !</span>
+              <span style={{ display: 'block', marginTop: '-0.5rem' }}>Une opportunité unique!</span>
             </p>
-            <h2 className="text-base mb-6 lg:text-[20px] ">
+            <h2 className="text-base mb-6 text-sm md:text-[20px] ">
               Un nouveau chapitre de Clé Blanche s’écrit
             </h2>
 

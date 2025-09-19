@@ -6,7 +6,7 @@ const Numbers = () => {
   const items = [
     {
       number: 7500,
-      label: "m2 d’espaces verts",
+      label: "m² d’espaces verts",
     },
     {
       number: 1200,
@@ -25,12 +25,12 @@ const Numbers = () => {
       <div className="py-24 w-full h-full  bg-[#0000008c] transition-opacity duration-700">
         <div className="container mx-auto text-white px-5">
           <div
-            className="flex flex-col gap-3 items-center text-center my-12"
+            className="flex flex-col gap-1 items-center text-center my-12"
             data-aos="fade-up"
           >
             {/* <h2 className="text-sm lg:text-lg">Clé Blanche Souissi</h2> */}
             <p
-              className={`lg:text-[20px] lg:text-[40px]  font-semibold text-second ${fontTitle.className}`}
+              className={`text-xl md:text-3xl font-semibold text-second ${fontTitle.className}`}
             >
               Un écrin de verdure, promesse de sérénité.
             </p>
@@ -39,7 +39,7 @@ const Numbers = () => {
             {items.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col gap-5 justify-center items-center py-12"
+                className="flex flex-col gap-1 md:gap-5 justify-center items-center py-3 md:py-12 "
               >
                 <div className="flex items-baseline justify-center">
                   <span className="text-5xl lg:text-7xl text-white font-light">
@@ -54,7 +54,7 @@ const Numbers = () => {
                     className="text-5xl lg:text-7xl text-white font-light count-up-text"
                   />
                 </div>
-                <p className="text-xl lg:text-2xl text-second mt-2">
+                <p className="text-xl md:text-3xl text-second mt-2">
                   {item.label}
                 </p>
               </div>
