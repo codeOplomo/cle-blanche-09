@@ -51,7 +51,7 @@ const Chapitre1Section = () => {
               controls
             >
               <source
-                src="/nouvelle-video-cle-blanche-realisee-avec-clipchamp.webm"
+                src="/CLE BLANCHE_compressed.webm"
                 type="video/webm"
               />
               <p>Your browser doesn&apos;t support HTML5 video.</p>
