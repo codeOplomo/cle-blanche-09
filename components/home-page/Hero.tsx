@@ -38,7 +38,28 @@ const Hero = () => {
             />
 
             <SplitText
-              text="Une Résidence d'Excellence au cœur de Souissi"
+              text="Une Résidence d'Excellence"
+              className={`text-4xl md:text-5xl ${fontTitle.className}`}
+              delay={100}
+              duration={1.8}
+              ease="power3.out"
+              splitType="chars"
+              from={{
+                opacity: 0,
+                y: 12,
+                scale: 1.01,
+              }}
+              to={{
+                opacity: 1,
+                y: 0,
+                scale: 1,
+              }}
+              threshold={0.1}
+              rootMargin="-100px"
+              textAlign="center"
+            />
+            <SplitText
+              text="au cœur de Souissi"
               className={`text-4xl md:text-5xl ${fontTitle.className}`}
               delay={100}
               duration={1.8}
