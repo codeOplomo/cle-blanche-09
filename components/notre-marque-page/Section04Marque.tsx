@@ -16,10 +16,10 @@ const Section04Marque = () => {
           />
         </div>
         <div className="flex flex-col gap-2 order-1 md:order-2">
-          <h2 className={`lg:text-[20px] lg:text-[40px] font-bold text-main-black ${fontTitle.className}`}>
+          <h2 className={`text-xl md:text-3xl font-bold text-main-black ${fontTitle.className}`}>
             Habiter plus Vert
           </h2>
-          <div className="flex flex-col gap-3 md:gap-4 text-black mt-3 md:mt-5">
+          <div className="text-sm md:text-[20px] flex flex-col gap-3 md:gap-4 text-black mt-3 md:mt-5 ">
             <p>
               Clé Blanche fait de la nature une évidence. Habiter plus Vert, c&apos;est 
               lui donner la place qu&apos;elle mérite, non comme un décor, mais comme une 

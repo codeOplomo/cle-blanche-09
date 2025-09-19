@@ -36,7 +36,7 @@ const HeroSection = () => {
           
           <SplitText
             text="Bien plus qu’une Résidence"
-            className={`text-2xl md:text-4xl lg:text-[58px] font-light tracking-wide text-white ${fontTitle.className}`}
+            className={`text-3xl md:text-[58px] font-light tracking-wide text-white ${fontTitle.className}`}
             delay={40}
             duration={1.4}
             ease="power4.out"
