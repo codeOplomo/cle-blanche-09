@@ -1,0 +1,46 @@
+import fontTitle from "@/lib/font";
+
+const FirstBreathHero = () => {
+  return (
+    <>
+      <div className="py-12 gap-10  z-10">
+        <div className="flex flex-col gap-5 lg:w-3/4 text-center my-4 container mx-auto text-lg">
+          <h2
+            data-aos="fade-up"
+            className={`lg:text-[20px] lg:text-[40px]  font-bold text-main-black ${fontTitle.className}`}
+          >
+            Saraya Holding & A.Lazrak Group
+            <span className="block">Un partenariat d’excellence</span>
+          </h2>
+          <div
+            className="flex flex-col gap-3 md:gap-2 text-black mt-3 md:mt-5 pb-12"
+            data-aos="fade-right"
+          >
+            <p>
+              Partie intégrante de l’ADN des fondateurs de la marque, cette
+              culture de l’innovation et de l’authenticité est cultivée chaque
+              jour par l’ensemble de nos collaborateurs afin de proposer sur nos
+              marchés des solutions toujours renouvelées.
+            </p>
+            <p>
+              Ce partenariat d’expertise autour de la prestigieuse marque Clé
+              Blanche ambitionne donc de donner naissance à des projets de très
+              haut standing, centrés autour de la qualité, de la recherche
+              d’innovation et de l’expérience du nouvel habitat.
+            </p>
+            <p>Une vision commune d’excellence.</p>
+          </div>
+        </div>
+        <div
+          className="relative w-full h-[400px] md:h-[760px] bg-fixed
+"
+          style={{ backgroundImage: `url(/saraya.webp)` }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default FirstBreathHero;

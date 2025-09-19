@@ -1,0 +1,127 @@
+"use client";
+
+import React, { useState } from "react";
+import Image from "next/image";
+import { Download } from "lucide-react";
+import SplitText from "@/components/ui/SplitText";
+import fontTitle from "@/lib/font";
+import BrochureModal from "@/components/home-page/BrochureModal";
+
+const ContactHeroSection = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  return (
+    <section className="min-h-screen relative flex items-center justify-center text-white">
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+          .contact-hero-text * {
+            line-height: 1.2 !important;
+          }
+        `,
+        }}
+      />
+
+      <div className="absolute inset-0 w-full h-full">
+        <Image
+          src="/contact/IMG_3450.JPG"
+          alt="Équipe Clé Blanche à votre service"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
+      </div>
+
+      <div className="relative z-10 text-center px-5 max-w-4xl mx-auto pt-24 contact-hero-text">
+        <div className="flex flex-col gap-2 mx-auto text-center mb-8">
+          <SplitText
+            text="Notre équipe est à votre écoute"
+            className={`text-2xl md:text-4xl lg:text-5xl font-light tracking-wide text-white ${fontTitle.className}`}
+            delay={40}
+            duration={1.4}
+            ease="power4.out"
+            splitType="chars"
+            from={{
+              opacity: 0,
+              y: 30,
+              scale: 0.95,
+              rotationX: -15,
+            }}
+            to={{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              rotationX: 0,
+            }}
+            threshold={0.2}
+            rootMargin="-80px"
+            textAlign="center"
+          />
+          {/* <SplitText
+            text="à votre écoute"
+            className={`text-2xl md:text-4xl lg:text-5xl font-medium tracking-wide text-white ${fontTitle.className}`}
+            delay={60}
+            duration={1.4}
+            ease="power4.out"
+            splitType="chars"
+            from={{
+              opacity: 0,
+              y: 35,
+              scale: 0.92,
+              rotationX: -20,
+            }}
+            to={{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              rotationX: 0,
+            }}
+            threshold={0.2}
+            rootMargin="-80px"
+            textAlign="center"
+          /> */}
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <SplitText
+            text="pour toute information ou prise de rendez-vous personnalisé"
+            className={`text-lg md:text-xl lg:text-2xl font-extralight tracking-wider max-w-4xl mx-auto leading-relaxed ${fontTitle.className} font-semibold`}
+            delay={60}
+            duration={1.2}
+            ease="power3.out"
+            splitType="chars"
+            from={{
+              opacity: 0,
+              y: 25,
+              scale: 0.98,
+            }}
+            to={{
+              opacity: 0.9,
+              y: 0,
+              scale: 1,
+            }}
+            threshold={0.2}
+            rootMargin="-80px"
+            textAlign="center"
+          />
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
+          <button
+            onClick={() => setModalOpen(true)}
+            className="flex items-center justify-center gap-2 px-6 py-2 rounded-md border-main border text-white bg-main hover:bg-transparent hover:text-white group duration-300 ease-in-out transition-all"
+          >
+            <Download className="h-8 w-8 p-1.5 flex justify-center items-center rounded-full bg-main text-main-black group-hover:bg-main" />
+            Télécharger la brochure
+          </button>
+          <BrochureModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactHeroSection;
