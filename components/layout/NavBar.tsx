@@ -27,7 +27,7 @@ const NavBar = () => {
         <Link href={"/"} className="absolute left-0 -bottom-3">
           <Image
             src={"/logo-main.png"}
-            style={{ position: "relative", left: -1 }}
+            style={{ position: "relative", left: -2 }}
             className="object-cover"
             alt="Logo"
             width={155}
@@ -50,8 +50,8 @@ const NavBar = () => {
           ))}
           <LanguageSwitcher />
           <Link href="/contact">
-            <button className="flex items-center justify-center gap-2 px-3 py-2 rounded-md border-main border text-white font-bold bg-main hover:bg-transparent hover:text-main-black group duration-300 ease-in-out transition-all">
-            Prendre un RDV
+            <button className="flex items-center justify-center gap-2 px-3 py-2 rounded-md border-main border text-white bg-main hover:bg-transparent hover:text-main-black group duration-300 ease-in-out transition-all">
+            Demander une visite privée
             </button>
           </Link>
         </div>

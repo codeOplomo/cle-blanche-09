@@ -29,11 +29,11 @@ const Chapitre2Page = () => {
         />
         <div className="absolute inset-0 w-full h-full bg-hero-2 bg-cover bg-center" />
 
-        <div className="relative z-10 text-center px-4 sm:px-5 max-w-4xl mx-auto contact-hero-text">
-          <div className="flex flex-col gap-2 mx-auto text-center mb-6 md:mb-8">
+        <div className="relative z-10 text-center px-4 sm:px-5 max-w-7xl mx-auto contact-hero-text">
+          <div className="flex flex-col gap-0 mx-auto text-center mb-6 md:mb-8">
             <SplitText
-              text="Appartements et penthouses"
-              className={`text-2xl sm:text-4xl md:text-5xl font-light tracking-wide text-white ${fontTitle.className}`}
+              text="Appartements et penthouses d’exception"
+              className={`text-2xl sm:text-4xl md:text-[58px] font-light tracking-wide text-white ${fontTitle.className}`}
               delay={40}
               duration={1.4}
               ease="power4.out"
@@ -55,8 +55,8 @@ const Chapitre2Page = () => {
               textAlign="center"
             />
             <SplitText
-              text="d'exception"
-              className={`text-2xl sm:text-4xl md:text-5xl font-medium tracking-wide text-white ${fontTitle.className}`}
+              text="dans un environnement exclusif"
+              className={`text-2xl sm:text-4xl md:text-[58px] font-medium tracking-wide text-white ${fontTitle.className}`}
               delay={60}
               duration={1.4}
               ease="power4.out"
@@ -79,7 +79,7 @@ const Chapitre2Page = () => {
             />
           </div>
 
-          <div className="flex flex-col gap-2 px-2">
+          {/* <div className="flex flex-col gap-2 px-2">
             <SplitText
               text="Dans un environnement exclusif"
               className={`text-lg md:text-xl lg:text-2xl font-extralight tracking-wider max-w-4xl mx-auto leading-relaxed ${fontTitle.className} font-semibold`}
@@ -101,10 +101,10 @@ const Chapitre2Page = () => {
               rootMargin="-80px"
               textAlign="center"
             />
-          </div>
+          </div> */}
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 md:mt-12 px-4">
-            <button
+            {/* <button
               onClick={() => {
                 const formSection = document.getElementById("contact-form");
                 if (formSection) {
@@ -117,7 +117,7 @@ const Chapitre2Page = () => {
                 <Phone size={16} className="sm:w-auto" />
               </div>
               Demander une visite privée
-            </button>
+            </button> */}
           </div>
         </div>
       </section>

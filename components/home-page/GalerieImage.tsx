@@ -35,13 +35,12 @@ const GalerieImage = () => {
 
   return (
     <div className="my-24 text-base">
-      <h2  data-aos="fade-up" className={`text-center lg:text-[20px] lg:text-[40px] font-bold text-main-black ${fontTitle.className}`}>
+      <h2  data-aos="fade-up" className={`text-center lg:text-[20px] lg:text-[40px] text-main-black ${fontTitle.className}`}>
         Un Art de vivre réinventé
         
       </h2>
-      <p  data-aos="fade-up" className="text-center py-2 lg:w-3/4 mx-auto">
-        Vivre à Clé Blanche, c’est avoir tout à portée de main, sans bruit, sans
-        attente.
+      <p  data-aos="fade-up" className="text-center py-2 lg:w-3/4 mx-auto text-[20px]">
+         Vivre à Clé Blanche, c’est avoir tout à portée de main, sans bruit, sans attente.
       </p>
 
       {/* Swiper Slider */}
@@ -62,7 +61,7 @@ const GalerieImage = () => {
       >
         {options.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="relative group overflow-hidden rounded-md"  data-aos="fade-right">
+            <div className="relative group overflow-hidden"  data-aos="fade-right">
               <div className="relative w-full h-[400px]">
                 <Image
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

@@ -5,9 +5,15 @@ import { Leaf, MapPin, Building2, Gem, Sun, Trees } from "lucide-react";
 
 const features = [
   {
-    title: "Une expérience inédite faite de luxe et d’habitat durable",
+    title: (
+      <>
+        Une expérience inédite faite de luxe
+        <br />
+        et d’habitat durable
+      </>
+    ),
     description:
-      "Un raffinement qui s’inscrit dans le temps ; une construction durable, élaborée pour que le chez vous de demain soit toujours identique à celui d’aujourd’hui.",
+      "Un raffinement qui s’inscrit dans le temps une construction durable, élaborée pour que le chez vous de demain soit toujours identique à celui d’aujourd’hui.",
     icon: Leaf,
   },
   {
@@ -19,7 +25,7 @@ const features = [
   {
     title: "Appartements et penthouses",
     description:
-      "Des volumes épurés et fonctionnels inondés de lumière au style intemporel. Un large éventail de surfaces allant de 120 à 412 m2",
+      "Des volumes épurés et fonctionnels inondés de lumière au style intemporel. Un large éventail de surfaces allant de 120 à 412 m².",
     icon: Building2,
   },
   {
@@ -31,7 +37,7 @@ const features = [
   {
     title: "De vastes et lumineuses terrasses",
     description:
-      "Pensées comme de véritables espaces de vie, les terrasses sont dotées de vastes baies vitrées coulissantes qui se ferment et s’ouvrent au gré des saisons ",
+      "Pensées comme de véritables espaces de vie, les terrasses sont dotées de vastes baies vitrées coulissantes qui se ferment et s’ouvrent au gré des saisons. ",
     icon: Sun,
   },
   {
@@ -54,22 +60,22 @@ const FeaturesGrid = () => {
     >
       <h2
         data-aos="fade-up"
-        className={`font-bold lg:text-[20px] lg:text-[40px] text-white text-center mb-8 md:mb-12 px-4 ${fontTitle.className}`}
+        className={`text-center lg:text-[20px] lg:text-[40px] text-white mb-8 md:mb-12 px-4 ${fontTitle.className}`}
       >
         Clé Blanche Chapitre II
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 container mx-auto text-base">
+      <div className=" grid grid-cols- md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 container mx-auto  text-base ">
         {features.map((feature, i) => (
           <div
             key={i}
             data-aos="fade-right"
-            className="flex flex-col items-center gap-1 md:gap-2 p-3 md:p-4 rounded-xl shadow-sm bg-white hover:shadow-md transition-shadow duration-300"
+            className="flex flex-col items-center justify-center gap-1 md:gap-2 p-3 md:p-4  shadow-sm bg-white hover:shadow-md transition-shadow duration-300 h-full text-center"
           >
-            <feature.icon className="w-7 h-7 md:w-8 md:h-8 text-white bg-main p-1.5 rounded-full flex-shrink-0" />
-            <h3 className="text-sm md:text-base font-semibold leading-none">
+            <feature.icon className="w-7 h-7 md:w-8 md:h-8 text-white bg-main p-1.5 flex-shrink-0" />
+            <h3 className="text-[20px] font-semibold leading-none text-center">
               {feature.title}
             </h3>
-            <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+            <p className="text-[20px]  text-gray-600 leading-relaxed text-center">
               {feature.description}
             </p>
           </div>

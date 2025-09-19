@@ -67,7 +67,7 @@ const FormContact = () => {
     <div className="pb-12" id="form-contact">
       <div className="container mx-auto items-center lg:px-5 px-4">
         {success ? (
-          <div className="text-black backdrop-blur-3xl p-5 py-12 rounded-2xl border border-main flex flex-col gap-5 items-center text-lg text-center mt-2">
+          <div className="text-black backdrop-blur-3xl p-5 py-12  border border-main flex flex-col gap-5 items-center text-lg text-center mt-2">
             <Image
               src={"/icons/coche.png"}
               alt="Coche"
@@ -81,7 +81,7 @@ const FormContact = () => {
         ) : (
           <form
             onSubmit={formik.handleSubmit}
-            className="backdrop-blur-3xl p-5 rounded-2xl border border-second flex flex-col gap-5 text-black"
+            className="backdrop-blur-3xl p-5 border border-second flex flex-col gap-5 text-black"
           >
             {/* Nom Field */}
             <div className="flex flex-col gap-2.5">
@@ -94,7 +94,7 @@ const FormContact = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.nom}
-                className="border-second h-10 sm:h-12 rounded-2xl text-sm sm:text-base"
+                className="border-second h-10 sm:h-12 text-sm sm:text-base"
               />
               {formik.touched.nom && formik.errors.nom && (
                 <div className="text-red-500 text-xs sm:text-sm">{formik.errors.nom}</div>
@@ -112,7 +112,7 @@ const FormContact = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.prenom}
-                className="border-second h-10 sm:h-12 rounded-2xl text-sm sm:text-base"
+                className="border-second h-10 sm:h-12  text-sm sm:text-base"
               />
               {formik.touched.prenom && formik.errors.prenom && (
                 <div className="text-red-500 text-xs sm:text-sm">{formik.errors.prenom}</div>
@@ -136,7 +136,7 @@ const FormContact = () => {
                     required: true,
                     autoFocus: false,
                     className:
-                      "pl-12 sm:pl-14 h-10 sm:h-12 w-full rounded-2xl border border-second text-black bg-white focus:outline-none text-sm sm:text-base",
+                      "pl-12 sm:pl-14 h-10 sm:h-12 w-full  border border-second text-black bg-white focus:outline-none text-sm sm:text-base",
                   }}
                   buttonClass="!border-none !bg-transparent !outline-none !left-2 sm:!left-3 !top-1.5 sm:!top-2"
                   containerClass="w-full"
@@ -163,7 +163,7 @@ const FormContact = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.email}
-                className="border-second h-10 sm:h-12 rounded-2xl text-sm sm:text-base"
+                className="border-second h-10 sm:h-12  text-sm sm:text-base"
               />
               {formik.touched.email && formik.errors.email && (
                 <div className="text-red-500 text-xs sm:text-sm">{formik.errors.email}</div>
@@ -183,7 +183,7 @@ const FormContact = () => {
                 onBlur={formik.handleBlur}
                 value={formik.values.message}
                 rows={5}
-                className="border-second rounded-2xl text-sm sm:text-base resize-none min-h-[120px] sm:min-h-[140px]"
+                className="border-second text-sm sm:text-base resize-none min-h-[120px] sm:min-h-[140px]"
               />
               {formik.touched.message && formik.errors.message && (
                 <div className="text-red-500 text-xs sm:text-sm">{formik.errors.message}</div>
@@ -192,7 +192,7 @@ const FormContact = () => {
 
             <Button
               type="submit"
-              className="bg-second border border-second/40 rounded-2xl h-10 sm:h-12 hover:bg-transparent hover:text-second text-sm sm:text-base"
+              className="bg-second border border-second/40  h-10 sm:h-12 hover:bg-transparent hover:text-second text-sm sm:text-base"
             >
               Envoyer
             </Button>

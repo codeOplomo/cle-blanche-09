@@ -12,6 +12,7 @@ export default function NotreMarquePage() {
     <main className="bg-white">
       <HeroSection />
       <Section01Marque />
+     <SectionMarqueAnimated />
       
       <Section02Marque />
 
@@ -21,7 +22,6 @@ export default function NotreMarquePage() {
         <SectionArtiste />
       </div>
 
-     <SectionMarqueAnimated />
       {/* hfj */}
     </main>
   );
