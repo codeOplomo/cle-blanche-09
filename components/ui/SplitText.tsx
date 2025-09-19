@@ -130,7 +130,7 @@ const SplitText: React.FC<SplitTextProps> = ({
       style={{
         textAlign,
         wordWrap: "break-word",
-        lineHeight: '90px',
+        lineHeight: '60px',
       }}
     >
       {text}

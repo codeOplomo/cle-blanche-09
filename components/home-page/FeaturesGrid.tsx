@@ -5,21 +5,21 @@ import { Leaf, MapPin, Building2, Gem, Sun, Trees } from "lucide-react";
 
 const features = [
   {
-    title: "Une expérience d'habitat durable et de luxe inédite",
+    title: "Une expérience inédite faite de luxe et d’habitat durable",
     description:
-      "Un quotidien tourné vers l'optimisation du bien-être, dans un cocon aux croisées de la nature et de l'innovation, cadre immobilier de prestige.",
+      "Un raffinement qui s’inscrit dans le temps ; une construction durable, élaborée pour que le chez vous de demain soit toujours identique à celui d’aujourd’hui.",
     icon: Leaf,
   },
   {
-    title: "Un emplacement exceptionnel en plein Souissi",
+    title: "Un emplacement exceptionnel au cœur de Souissi",
     description:
-      "Un cadre de vie résidentiel sans équivalent à Rabat, dans un quartier de prestige bercé par une étonnante douceur de vivre",
+      "Un cadre de vie sans équivalent à Rabat, dans un quartier prestigieux, promesse de sérénité et de douceur de vivre, loin du tumulte de la ville et pourtant si proche.",
     icon: MapPin,
   },
   {
     title: "Appartements et penthouses",
     description:
-      "Des volumes épurés d’une surface allant de 120m² à 412m², inondés de lumière, esthétiques, fonctionnels, innovants et intemporels.",
+      "Des volumes épurés et fonctionnels inondés de lumière au style intemporel. Un large éventail de surfaces allant de 120 à 412 m2",
     icon: Building2,
   },
   {
@@ -31,13 +31,13 @@ const features = [
   {
     title: "De vastes et lumineuses terrasses",
     description:
-      "Pensées comme de véritables espaces de vie qui métamorphoseront votre quotidien, avec des surfaces de baies vitrées exceptionnelles.",
+      "Pensées comme de véritables espaces de vie, les terrasses sont dotées de vastes baies vitrées coulissantes qui se ferment et s’ouvrent au gré des saisons ",
     icon: Sun,
   },
   {
-    title: "Un écrin de verdure paysagé",
+    title: "Un environnement et apaisant",
     description:
-      "Au cœur d&apos;une biodiversité préservée, de vastes jardins et points d’eau, salle de fitness, aire de jeux pour enfants… une enceinte de déconnexion.",
+      "Jardin paysagé où il fait bon s’assoir à l’ombre des pergolas, fraîcheur des fontaines, beauté des sculptures de Jamil Bennani, aire de jeux pour les enfants, salle de fitness… vous êtes bien à Clé Blanche.",
     icon: Trees,
   },
 ];
@@ -63,10 +63,10 @@ const FeaturesGrid = () => {
           <div
             key={i}
             data-aos="fade-right"
-            className="flex flex-col items-start gap-2 md:gap-3 p-3 md:p-4 rounded-xl shadow-sm bg-white hover:shadow-md transition-shadow duration-300"
+            className="flex flex-col items-center gap-1 md:gap-2 p-3 md:p-4 rounded-xl shadow-sm bg-white hover:shadow-md transition-shadow duration-300"
           >
             <feature.icon className="w-7 h-7 md:w-8 md:h-8 text-white bg-main p-1.5 rounded-full flex-shrink-0" />
-            <h3 className="text-sm md:text-base font-semibold leading-tight">
+            <h3 className="text-sm md:text-base font-semibold leading-none">
               {feature.title}
             </h3>
             <p className="text-xs md:text-sm text-gray-600 leading-relaxed">

@@ -45,14 +45,28 @@ const HowCanHelpYou = () => {
   ];
 
   return (
-    <div className="my-12 md:my-24 px-4">
-      <div className="flex flex-col gap-3 items-center text-center my-8 md:my-12"  data-aos="fade-up">
-        <p className={`lg:text-[20px] lg:text-[40px]  font-semibold text-main-black ${fontTitle.className}`}>
-          Se sentir libre à l&apos;abri des regards
+    <div className="my-12 px-4">
+      <div
+        className="flex flex-col gap-3 items-center text-center my-8 md:my-12"
+        data-aos="fade-up"
+      >
+        <h2
+          className={`lg:text-[20px] lg:text-[40px] text-main-black ${fontTitle.className} leading-none`}
+        >
+          Une intimité préservée. Un large éventail de surfaces
+        </h2>
+        <p
+          className={`md:text-lg lg:text-xl text-sm text-main-black`}
+        >
+          À Clé Blanche, l’espace respire. Devant chaque immeuble, de vastes
+          étendues laissent <br /> le soleil tracer son chemin. Ici, l’intimité n’est
+          pas un luxe, mais une évidence. Nos intérieurs sont de vastes espaces <br />
+          apaisants, sobres et épurés, qui marient luxe discret et matériaux
+          bruts.
         </p>
       </div>
 
-      <div className="flex flex-col gap-2 relative"  data-aos="fade-up">
+      <div className="flex flex-col gap-2 relative" data-aos="fade-up">
         {data.map((item) => (
           <div
             key={item.id}
@@ -86,18 +100,16 @@ const HowCanHelpYou = () => {
             {/* Content Container */}
             <div className="absolute bottom-0 w-full p-4 md:p-8 space-y-3 md:space-y-4">
               {/* Title - Always Visible */}
-              <h2 className={`lg:text-[20px] lg:text-[40px]  font-bold text-white drop-shadow-lg transition-all duration-500 translate-y-0 ${fontTitle.className}`}>
-                {item.title}
-              </h2>
+            
 
-              <p className="text-sm md:text-lg lg:text-xl text-white leading-relaxed">
-                {item.description}
-              </p>
-              
               <Link href="/chapitre-2">
                 <Button className="text-xs sm:text-sm md:text-lg lg:text-xl border border-white bg-transparent hover:bg-white hover:text-black transition-all duration-300 py-2 px-3 sm:py-3 sm:px-6 md:py-5 md:px-12 rounded-lg w-full sm:w-auto">
-                  <span className="block xs:hidden">Laissez-vous guider dans nos résidences</span>
-                  <span className="hidden sm:block">Laissez-vous guider dans nos résidences</span>
+                  <span className="block xs:hidden">
+                    Découvrez nos appartements
+                  </span>
+                  {/* <span className="hidden sm:block">
+                    Laissez-vous guider dans nos résidences
+                  </span> */}
                 </Button>
               </Link>
             </div>

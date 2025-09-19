@@ -7,28 +7,27 @@ const FirstBreathHero = () => {
         <div className="flex flex-col gap-5 lg:w-3/4 text-center my-4 container mx-auto text-lg">
           <h2
             data-aos="fade-up"
-            className={`lg:text-[20px] lg:text-[40px]  font-bold text-main-black ${fontTitle.className}`}
+            className={`lg:text-[20px] lg:text-[40px] text-main-black ${fontTitle.className}`}
           >
             Saraya Holding & A.Lazrak Group
             <span className="block">Un partenariat d’excellence</span>
           </h2>
           <div
-            className="flex flex-col gap-3 md:gap-2 text-black mt-3 md:mt-5 pb-12"
+            className="flex flex-col gap-3 md:gap-2 text-black mt-3 md:mt-5 pb-12 w-full max-w-4xl mx-auto"
             data-aos="fade-right"
           >
             <p>
-              Partie intégrante de l’ADN des fondateurs de la marque, cette
-              culture de l’innovation et de l’authenticité est cultivée chaque
-              jour par l’ensemble de nos collaborateurs afin de proposer sur nos
-              marchés des solutions toujours renouvelées.
+              L’innovation et l’authenticité ne sont pas des choix. Elles sont
+              inscrites dans l’âme de ceux qui font cette marque. Chaque jour,
+              nos mains bâtissent, inventent, repoussent les frontières du
+              possible. Autour de Clé Blanche, un pacte se noue : celui d’une
+              exigence absolue. De cette alliance naissent des projets
+              d’exception, où la qualité rencontre l’audace, où l’habitat se
+              réinvente. Une vision partagée. Un engagement sans compromis.
             </p>
             <p>
-              Ce partenariat d’expertise autour de la prestigieuse marque Clé
-              Blanche ambitionne donc de donner naissance à des projets de très
-              haut standing, centrés autour de la qualité, de la recherche
-              d’innovation et de l’expérience du nouvel habitat.
+              Une vision partagée. Un engagement sans compromis.
             </p>
-            <p>Une vision commune d’excellence.</p>
           </div>
         </div>
         <div
