@@ -7,7 +7,7 @@ import localFont from "next/font/local";
 import AOSInit from "@/components/AOSInit";
 
 const siena = localFont({
-  src: "../public/fonts/Avenir Light/Avenir Light.ttf",
+  src: "../public/fonts/Avenir Light/Avenir Light.ttf ",
 });
 
 export const metadata: Metadata = {
