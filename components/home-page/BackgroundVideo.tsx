@@ -16,7 +16,7 @@ const BackgroundVideo = () => {
         //   preload="none"
         className="w-full h-full object-cover"
       >
-        <source src="https://cle-blance-09-ua53.vercel.app/main-video.webm" type="video/webm" />
+        <source src="https://cle-blance-09-ua53.vercel.app/nouvelle-video-cle-blanche-realisee-avec-clipchamp.webm" type="video/webm" />
 
         Your browser does not support the video tag.
       </video>
