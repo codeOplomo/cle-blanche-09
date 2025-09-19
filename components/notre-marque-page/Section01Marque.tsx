@@ -1,5 +1,5 @@
 import React from "react";
-import fontTitle from "@/lib/font";
+// ...existing code...
 
 const Section01Marque = () => {
   return (

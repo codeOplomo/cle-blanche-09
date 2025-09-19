@@ -18,17 +18,17 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
     setSelectedImageIndex(null);
   };
 
-  const nextImage = () => {
+  const nextImage = React.useCallback(() => {
     setSelectedImageIndex((prev) => 
       prev === null ? 0 : prev === images.length - 1 ? 0 : prev + 1
     );
-  };
+  }, [images.length]);
 
-  const previousImage = () => {
+  const previousImage = React.useCallback(() => {
     setSelectedImageIndex((prev) => 
       prev === null ? 0 : prev === 0 ? images.length - 1 : prev - 1
     );
-  };
+  }, [images.length]);
 
   // Gestion des touches clavier
   useEffect(() => {
@@ -50,7 +50,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
       document.removeEventListener('keydown', handleKeyPress);
       document.body.style.overflow = 'unset';
     };
-  }, [selectedImageIndex]);
+  }, [selectedImageIndex, nextImage, previousImage]);
 
   return (
     <>

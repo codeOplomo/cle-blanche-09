@@ -14,14 +14,14 @@ const useMedia = (
   values: number[],
   defaultValue: number
 ): number => {
-  const get = () => {
+  const get = React.useCallback(() => {
     if (typeof window === "undefined" || typeof matchMedia === "undefined") {
       return defaultValue;
     }
     return (
       values[queries.findIndex((q) => matchMedia(q).matches)] ?? defaultValue
     );
-  };
+  }, [queries, values, defaultValue]);
 
   const [value, setValue] = useState<number>(get);
 
@@ -38,7 +38,7 @@ const useMedia = (
       mediaQueryLists.forEach((mql) =>
         mql.removeEventListener("change", handler)
       );
-  }, [queries]);
+  }, [queries, get]);
 
   return value;
 };
@@ -55,7 +55,7 @@ const useMeasure = <T extends HTMLElement>() => {
     });
     ro.observe(ref.current);
     return () => ro.disconnect();
-  }, []);
+  }, [ref]);
 
   return [ref, size] as const;
 };
@@ -117,13 +117,13 @@ const Masonry: React.FC<MasonryProps> = ({
   const [containerRef, { width }] = useMeasure<HTMLDivElement>();
   const [imagesReady, setImagesReady] = useState(false);
 
-  const getInitialPosition = (item: any) => {
+  const getInitialPosition = React.useCallback((item: any) => {
     const containerRect = containerRef.current?.getBoundingClientRect();
     if (!containerRect) return { x: item.x, y: item.y };
 
     let direction = animateFrom;
     if (animateFrom === "random") {
-      const dirs = ["top", "bottom", "left", "right"];
+      const dirs = ["top", "bottom", "left", "right", "center"];
       direction = dirs[
         Math.floor(Math.random() * dirs.length)
       ] as typeof animateFrom;
@@ -144,9 +144,9 @@ const Masonry: React.FC<MasonryProps> = ({
           y: containerRect.height / 2 - item.h / 2,
         };
       default:
-        return { x: item.x, y: item.y + 100 };
+        return { x: item.x, y: item.y };
     }
-  };
+  }, [animateFrom, containerRef]);
 
   useEffect(() => {
     preloadImages(items.map((i) => i.img)).then(() => setImagesReady(true));
@@ -211,7 +211,7 @@ const Masonry: React.FC<MasonryProps> = ({
     });
 
     hasMounted.current = true;
-  }, [grid, imagesReady, stagger, animateFrom, blurToFocus, duration, ease]);
+  }, [grid, imagesReady, stagger, animateFrom, blurToFocus, duration, ease, getInitialPosition]);
 
   const handleMouseEnter = (id: string, element: HTMLElement) => {
     if (scaleOnHover) {

@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState, useCallback } from "react";
 import fontTitle from "@/lib/font";
+import NextImage from "@/components/ui/NextImage";
 import "react-before-after-slider-component/dist/build.css";
 
 const Section04: React.FC = () => {
@@ -88,15 +89,18 @@ const Section04: React.FC = () => {
         style={{ cursor: dragging ? "grabbing" : "ew-resize", touchAction: "none" }}
       >
         {/* Image avant (left) */}
-        <img
+        <NextImage
           src="/penthouse111.jpeg"
           alt="Avant - vue extérieure du penthouse"
           className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
           draggable={false}
+          fill
+          sizes="100vw"
+          priority
         />
 
         {/* Image après (right) clipped from left by percent */}
-        <img
+        <NextImage
           src="/interieurterrassepenthousesoirretouche01635mm-x-412mm300dpi.jpg"
           alt="Après - intérieur / terrasse"
           className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
@@ -106,6 +110,9 @@ const Section04: React.FC = () => {
             WebkitClipPath: `inset(0 0 0 ${percentPct}%)`,
           }}
           draggable={false}
+          fill
+          sizes="100vw"
+          priority
         />
 
         {/* Overlay gradient — stronger on small screens for contrast */}

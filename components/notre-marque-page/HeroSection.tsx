@@ -1,8 +1,8 @@
 "use client";
-import { Phone } from "lucide-react";
+// ...existing code...
 import React from "react";
 import fontTitle from "@/lib/font";
-import Link from "next/link";
+// ...existing code...
 import SplitText from "../ui/SplitText";
 
 const HeroSection = () => {

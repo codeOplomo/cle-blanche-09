@@ -6,7 +6,7 @@ import Section04 from "@/components/chapitre-2-page/Section04";
 import SplitText from "@/components/ui/SplitText";
 import FormContact from "@/components/ui/FormContact";
 import fontTitle from "@/lib/font";
-import { Phone } from "lucide-react";
+// ...existing code...
 import React from "react";
 
 const Chapitre2Page = () => {

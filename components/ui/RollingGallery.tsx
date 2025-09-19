@@ -1,5 +1,6 @@
 "use client"
 import React, { useEffect, useState } from "react";
+import NextImage from "@/components/ui/NextImage";
 import {
   motion,
   useMotionValue,
@@ -162,10 +163,14 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
                 }deg) translateZ(${radius}px)`,
               }}
             >
-              <img
+              <NextImage
                 src={url}
                 alt="gallery"
                 className="pointer-events-none h-[120px] w-[300px] rounded-[15px] border-[3px] border-white object-cover transition-transform duration-300 ease-out group-hover:scale-105 sm:h-[100px] sm:w-[220px]"
+                width={300}
+                height={120}
+                style={{ width: '100%', height: 'auto' }}
+                priority
               />
             </div>
           ))}
