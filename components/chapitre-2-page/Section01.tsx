@@ -15,7 +15,7 @@ const Section01: React.FC = () => {
           >
             Des volumes épurés{" "}
             <span className=" text-gray-900 ">baignés de lumière</span>{" "}
-            <span className="text-gray-900 whitespace-nowrap ">
+            <span className="text-gray-900 wrap">
               aux finitions exceptionnelles
             </span>
 

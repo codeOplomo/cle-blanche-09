@@ -9,6 +9,10 @@ import Numbers from "@/components/home-page/Numbers";
 import Prensetation from "@/components/home-page/Prensetation";
 import FormContact from "@/components/ui/FormContact";
 // import Visit360 from '@/components/home-page/Visit360'
+// import Visit360 from '@/components/home-page/Visit360'
+
+// import Visit360 from '@/components/home-page/Visit360'
+// import Visit360 from '@/components/home-page/Visit360'
 import React from "react";
 
 const Page = () => {
