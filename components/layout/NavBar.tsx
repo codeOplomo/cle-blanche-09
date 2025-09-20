@@ -27,7 +27,7 @@ const NavBar = () => {
         <Link href={"/"} className="absolute left-0  -bottom-3">
           <Image
             src={"/logo-main.png"}
-            style={{ position: "relative", left: -2 , top: 1 }}
+            style={{ position: "relative", left: -2  }}
             className="object-cover"
             alt="Logo"
             width={155}
