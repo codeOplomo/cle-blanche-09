@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import fontTitle from "@/lib/font";
+import Image from "next/image";
 
 export default function Section03Marque() {
   return (
@@ -20,8 +21,8 @@ export default function Section03Marque() {
       {/* centered translucent panel so the textured background remains visible around it */}
       <div className="w-full px-6 relative" style={{ zIndex: 10 }}>
         <div className="flex justify-center">
-          <div className="w-full lg:w-full max-w-6xl p-10 relative overflow-hidden">
-            <div className="mx-4 md:mx-0 rounded-sm relative overflow-hidden" style={{ border: '1px solid rgba(255,255,255,0.08)' }}>
+          <div className="w-full lg:w-full max-w-6xl relative overflow-hidden">
+            <div className="md:mx-0 relative overflow-hidden" style={{ border: '1px solid rgba(255,255,255,0.08)' }}>
               {/* panel base color */}
               <div style={{ background: 'rgba(88,77,64,0.36)', position: 'absolute', inset: 0, zIndex: 0 }} />
               {/* textured layer on top of the base but behind content */}
@@ -54,7 +55,7 @@ export default function Section03Marque() {
                 </div>
                 
                 <h3 className={`${fontTitle.className} text-3xl md:text-4xl leading-tight text-white mt-4`}>Le mot des Architectes</h3>
-                <p className="mt-6 text-white text-sm md:text-[20px]  max-w-5xl mx-auto">
+                <p className="mt-6 text-white text-sm md:text-[20px] max-w-5xl mx-auto">
                   Nous avons pensé Clé Blanche comme une alliance entre la matière et le temps. Une architecture minérale,
                   chaleureuse et ancrée dans son époque, où chaque texture et chaque détail portent une vision du prestige et du
                   raffinement. Nous avons voulu des espaces épurés, baignés de lumière, où les finitions
@@ -76,25 +77,36 @@ export default function Section03Marque() {
                 </div>
                 
                 <div className="flex flex-col md:flex-row gap-16 justify-end">
-                <div className="mt-8 text-sm text-white text-right">
-                  <div>Amin KANDUNI</div>
-                  {/* place signature image exported from PSD as PNG/JPG in public/signature */}
-                  <img
-                    src="/signature/Signature_AmineKANOUNI_Blanche.webp"
-                    alt="Signature Amin Kanduni"
-                    className="mt-2 w-40 h-auto object-contain"
-                  />
-            
+                  <div className="mt-8 text-sm text-white text-right">
+                    <div>Amin KANDUNI</div>
+                    {/* place signature image exported from PSD as PNG/JPG in public/signature */}
+                    <img
+                      src="/signature/Signature_AmineKANOUNI_Blanche.webp"
+                      alt="Signature Amin Kanduni"
+                      className="mt-2 w-40 h-auto object-contain"
+                    />
+                  </div>
+                  <div className="mt-8 text-sm text-white text-right">
+                    <div>Boubker SEFRIOUI</div>
+                    <img
+                      src="/signature/Signature_BoubkerSEFRIOUI_Blanche.webp"
+                      alt="Signature Boubker Sefrioui"
+                      className="mt-2 w-40 h-auto object-contain"
+                    />
+                  </div>
                 </div>
-                <div className="mt-8 text-sm text-white text-right">
-                  <div>Boubker SEFRIOUI</div>
-                  <img
-                    src="/signature/Signature_BoubkerSEFRIOUI_Blanche.webp"
-                    alt="Signature Boubker Sefrioui"
-                    className="mt-2 w-40 h-auto object-contain"
+              </div>
+
+              {/* right column: image that covers its half (40% on md+) */}
+              <div className="w-full md:w-2/5">
+                <div className="w-full h-[650px] relative">
+                  <Image
+                    src={'/new/IMG_8639-Migliorato-NR.jpg'}
+                    alt="Habiter plus Vert"
+                    className="object-cover"
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
                   />
-  
-                </div>
                 </div>
               </div>
             </div>

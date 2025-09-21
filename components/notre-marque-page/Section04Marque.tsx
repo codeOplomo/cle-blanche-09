@@ -37,7 +37,7 @@ const Section04Marque = () => {
             </div>
 
             {/* Right content: single flowing paragraph (no columns) */}
-            <div className="md:w-3/4 bg-white/0 text-[15px] md:text-[16px] text-black leading-tight">
+            <div className="md:w-3/4 bg-white/0 text-sm md:text-[20px] text-black leading-tight">
               <div className="text-black">
                 <p className="mb-0">{body}</p>
               </div>
