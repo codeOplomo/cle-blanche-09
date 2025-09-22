@@ -5,7 +5,7 @@ const Section02Marque = () => {
   return (
     <section className="w-full bg-[#e6dccf] mt-0" data-aos="fade-up">
       <div className="h-full flex items-center container mx-auto  ">
-        <div className="w-full  mx-auto py-24">
+        <div className="w-full  mx-auto py-24 px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch bg-[##e1d6c1]">
             {/* Image column - match text column height */}
             <div
@@ -29,7 +29,7 @@ const Section02Marque = () => {
                 </h2>
 
                 <div className="mt-4 text-main-black text-sm md:text-[20px] leading-relaxed max-w-prose">
-                  <p className="mb-3">
+                  <p className="mb-3 ">
                     À Clé Blanche, tout est pensé pour durer ; une construction
                     durable, élaborée pour que le chez vous de demain soit
                     toujours identique à celui d’aujourd’hui. Ici, la pierre
