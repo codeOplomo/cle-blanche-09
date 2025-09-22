@@ -26,7 +26,7 @@ const features = [
     icon: Leaf,
   },
   {
-    title: <>Un emplacement exceptionnel au cœur au cœur de Souissi</>,
+    title: <>Un emplacement exceptionnel au cœur de Souissi</>,
     description:
       "Un cadre de vie sans équivalent à Rabat, dans un quartier prestigieux, promesse de sérénité et de douceur de vivre, loin du tumulte de la ville et pourtant si proche.",
     icon: MapPin,
@@ -83,13 +83,13 @@ const FeaturesGrid = () => {
           <div
             key={i}
             data-aos="fade-right"
-            className="flex flex-col items-center justify-center gap-1 md:gap-2 p-3 md:p-4  shadow-sm bg-white hover:shadow-md transition-shadow duration-300 h-full text-center"
+            className="flex flex-col items-center justify-start gap-2 p-3 md:p-4 shadow-sm bg-white hover:shadow-md transition-shadow duration-300 h-full text-center"
           >
             <feature.icon className="w-7 h-7 md:w-8 md:h-8 text-white bg-main p-1.5 flex-shrink-0" />
-            <h3 className="text-sm md:text-[20px] font-semibold leading-none text-center">
+            <h3 className="text-sm md:text-[20px] font-semibold leading-none">
               {feature.title}
             </h3>
-            <p className="text-sm md:text-[20px]  text-gray-600 leading-relaxed text-center">
+            <p className="md:text-lg lg:text-xl text-sm text-gray-600 leading-relaxed">
               {preventOrphan(String(feature.description))}
             </p>
           </div>

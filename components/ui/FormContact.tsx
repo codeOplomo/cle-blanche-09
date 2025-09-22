@@ -178,7 +178,7 @@ const FormContact = () => {
               <Textarea
                 id="message"
                 name="message"
-                placeholder="Écrivez votre message ici..."
+                placeholder=""
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.message}

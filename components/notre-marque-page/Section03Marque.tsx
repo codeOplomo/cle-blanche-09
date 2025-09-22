@@ -54,7 +54,7 @@ export default function Section03Marque() {
                 </p>
                 <div className="flex flex-col md:flex-row gap-16 justify-end">
                   <div className="mt-8 text-sm text-white text-center">
-                    <div>Amin KANDUNI</div>
+                    <div>Amin KANOUNI</div>
                     {/* place signature image exported from PSD as PNG/JPG in public/signature */}
                     <img
                       src="/signature/Signature_AmineKANOUNI_Blanche.webp"
@@ -82,7 +82,7 @@ export default function Section03Marque() {
               {/* left column: decorative bar or image (60% on md+) */}
               <div className="w-full md:w-3/5 p-6 flex items-center bg-white/30" style={{ backgroundColor: 'rgba(255,255,255,0.5)' }}>
                 <div className="w-full bg-transparent text-end ">
-                  <h3 className={`${fontTitle.className} text-3xl md:text-4xl leading-tight mt-4 pr-12`}>Le mot des Architectes</h3>
+                  <h3 className={`${fontTitle.className} text-3xl md:text-4xl leading-tight mt-4 pr-12`}>La touche de l’Artiste</h3>
                   <p className="mt-6 text-sm md:text-[20px] max-w-md mx-auto ">
                     J’ai imaginé ces sculptures comme des passages
                     symboliques, entre l’extérieur et l’espace intime, entre la
