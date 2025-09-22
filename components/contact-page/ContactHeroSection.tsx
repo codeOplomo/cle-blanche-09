@@ -32,15 +32,15 @@ const ContactHeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
       </div>
 
-      <div className="relative z-10 text-center px-5 max-w-4xl mx-auto pt-24 contact-hero-text">
+      <div className="relative z-10 text-center px-5 max-w-5xl mx-auto pt-24 contact-hero-text">
         <div className="flex flex-col gap-2 mx-auto text-center mb-8">
           <SplitText
-            text="Notre équipe est à votre écoute"
+            text="Bienvenue dans le show-room Clé Blanche"
             className={`text-2xl md:text-4xl lg:text-5xl font-light tracking-wide text-white ${fontTitle.className}`}
             delay={40}
             duration={1.4}
             ease="power4.out"
-            splitType="chars"
+            splitType="words"
             from={{
               opacity: 0,
               y: 30,
@@ -82,7 +82,7 @@ const ContactHeroSection = () => {
           /> */}
         </div>
 
-        <div className="flex flex-col gap-2">
+        {/* <div className="flex flex-col gap-2">
           <SplitText
             text="pour toute information ou prise de rendez-vous personnalisé"
             className={`text-lg md:text-xl lg:text-2xl font-extralight tracking-wider max-w-4xl mx-auto leading-relaxed ${fontTitle.className} font-semibold`}
@@ -104,7 +104,7 @@ const ContactHeroSection = () => {
             rootMargin="-80px"
             textAlign="center"
           />
-        </div>
+        </div> */}
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
           <button
