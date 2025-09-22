@@ -9,7 +9,7 @@ const BannerCta = () => {
   return (
     <div
       className=" my-24 bg-cover bg-fixed"
-      style={{ backgroundImage: "url('/contact/IMAGE PLAN CLE BLANCHE.png')", height: '500px' }}
+      style={{ backgroundImage: "url('/ai.webp')", height: '500px' }}
     >
       <div className="py-12 w-full h-full  bg-[#0000008c] transition-opacity duration-700">
         <div className="container mx-auto text-white px-5">

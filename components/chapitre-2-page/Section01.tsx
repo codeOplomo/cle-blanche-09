@@ -10,29 +10,28 @@ const Section01: React.FC = () => {
           className="grid grid-cols-1 lg:grid-cols-2 gap-16 sm:gap-12 lg:gap-18 items-center"
           data-aos="fade-left"
         >
-          <span
-            className={`text-2xl sm:text-3xl md:text-4xl lg:text-[58px] text-gray-900 mb-6  ${fontTitle.className}`}
-          >
-            Des volumes épurés{" "}
-            <span className=" text-gray-900 ">baignés de lumière</span>{" "}
-            <span className="text-gray-900 wrap">
-              aux finitions exceptionnelles
+          <div>
+            <span
+              className={`text-2xl sm:text-3xl md:text-4xl lg:text-[58px] text-gray-900 mb-6  ${fontTitle.className}`}
+            >
+              Des volumes épurés{" "}
+              <span className=" text-gray-900 ">baignés de lumière</span>{" "}
+              <span className="text-gray-900 wrap">aux finitions exceptionnelles</span>
             </span>
 
-            {/* Feature list — responsive and touch-friendly on mobile, same desktop layout */}
-            {/* This has to be the same font as the patagraph */}
+            {/* Feature list — placed outside the title span so it inherits paragraph font */}
             <ul
               role="list"
-              className="grid grid-cols-1 sm:grid-cols-2 gap-0 pt-0 max-w-md mx-auto lg:mx-0 font-sans"
+              className="grid grid-cols-1 sm:grid-cols-2 gap-0 pt-0 max-w-md mx-auto lg:mx-0 "
             >
               <Feature text="Finitions premium" />
               <Feature text="Lumière naturelle" />
               <Feature text="Matériaux nobles" />
               <Feature text="Espaces ouverts" />
             </ul>
-          </span>
+          </div>
 
-          <div className="space-y-4 text-gray-700 text-base sm:text-lg px-4 sm:px-0" data-aos="fade-up">
+          <div className="space-y-10 text-gray-700 text-base sm:text-lg px-4 sm:px-0" data-aos="fade-up">
             <p className="max-w-prose mx-auto lg:mx-0 leading-relaxed">
               À Clé Blanche, la lumière est chez elle. Elle glisse sur le marbre, effleure le noyer, 
 traverse d’immenses baies vitrées. Chaque espace respire, ouvert sur l’exté

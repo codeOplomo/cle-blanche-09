@@ -3,7 +3,7 @@ import React from "react";
 
 const Chapitre1Section = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="pt-16 bg-white">
       <style
         dangerouslySetInnerHTML={{
           __html: `

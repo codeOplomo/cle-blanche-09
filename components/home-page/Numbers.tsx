@@ -30,12 +30,12 @@ const Numbers = () => {
           >
             {/* <h2 className="text-sm lg:text-lg">Clé Blanche Souissi</h2> */}
             <p
-              className={`text-xl md:text-3xl font-semibold text-second ${fontTitle.className}`}
+              className={`text-3xl md:text-[58px] font-semibold text-second ${fontTitle.className}`}
             >
-              Un écrin de verdure, promesse de sérénité.
+              Un écrin de verdure<br/> promesse de sérénité.
             </p>
           </div>
-          <div className="grid lg:grid-cols-3 lg:divide-x-4 divide-white/80 gap-5 lg:gap-10 lg:mt-24">
+          <div className="grid lg:grid-cols-3 lg:divide-x-2 divide-white/80  lg:mt-24 lg:border-l-2 lg:border-r-2 lg:border-white/80">
             {items.map((item, index) => (
               <div
                 key={index}

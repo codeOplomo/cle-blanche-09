@@ -28,8 +28,8 @@ const HeroSection = () => (
     <div className="relative z-10 text-center px-5 max-w-4xl mx-auto pt-24 contact-hero-text">
       <div className="flex flex-col gap-2 mx-auto text-center mb-8">
         <SplitText
-          text="Découvrez en images la première "
-          className={`text-2xl md:text-4xl lg:text-5xl font-light tracking-wide text-white ${fontTitle.className}`}
+          text="Découvrez en images  "
+          className={`text-3xl md:text-[58px] font-light tracking-wide text-white ${fontTitle.className}`}
           delay={40}
           duration={1.4}
           ease="power4.out"
@@ -51,8 +51,31 @@ const HeroSection = () => (
           textAlign="center"
         />
         <SplitText
-          text="phase livrée de Clé Blanche."
-          className={`text-2xl md:text-4xl lg:text-5xl font-medium tracking-wide text-white ${fontTitle.className}`}
+          text=" la première phase livrée"
+          className={`text-3xl md:text-[58px] font-medium tracking-wide text-white ${fontTitle.className}`}
+          delay={60}
+          duration={1.4}
+          ease="power4.out"
+          splitType="chars"
+          from={{
+            opacity: 0,
+            y: 35,
+            scale: 0.92,
+            rotationX: -20,
+          }}
+          to={{
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            rotationX: 0,
+          }}
+          threshold={0.2}
+          rootMargin="-80px"
+          textAlign="center"
+        />
+        <SplitText
+          text=" de Clé Blanche"
+          className={`text-3xl md:text-[58px] font-medium tracking-wide text-white ${fontTitle.className}`}
           delay={60}
           duration={1.4}
           ease="power4.out"
@@ -74,10 +97,10 @@ const HeroSection = () => (
           textAlign="center"
         />
       </div>
-      <div className="flex flex-col gap-2">
+      {/* <div className="flex flex-col gap-2">
         <SplitText
           text="symbole de rigueur, d'excellence et raffinement."
-          className={`text-lg md:text-xl lg:text-2xl font-extralight tracking-wider max-w-4xl mx-auto leading-relaxed ${fontTitle.className} font-semibold`}
+          className={`text-lg md:text-xl lg:text-2xl font-extralight tracking-wider max-w-4xl mx-auto leading-relaxed ${fontTitle.className}`}
           delay={80}
           duration={1.2}
           ease="power3.out"
@@ -96,7 +119,7 @@ const HeroSection = () => (
           rootMargin="-80px"
           textAlign="center"
         />
-      </div>
+      </div> */}
     </div>
   </section>
 );
