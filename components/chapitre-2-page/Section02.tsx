@@ -10,7 +10,7 @@ const Section02: React.FC = () => {
       title: "Appartement Plénitude 3",
       rooms: "2 chambres + salon",
       surface: "78 m² à 106 m²",
-      image: "/chapitre2/Section02/appartemetn-pleniude-3.jpg",
+      image: "/new/Intérieur_Salon duplex_01_Escalier retouché_2116mm x 1370mm_72dpi.jpg",
       type: "Plénitude",
     },
     {
@@ -24,7 +24,7 @@ const Section02: React.FC = () => {
       title: "Appartement amplitude 4",
       rooms: "3 chambres + salon + chambre de personnel",
       surface: "140 m² à 184 m²",
-      image: "/chapitre2/Section02/appartement-amplitude-4.jpg",
+      image: "/new/Intérieur_Salon_01_1587mm x 1058mm_72dpi.jpg",
       type: "Amplitude",
     },
     {
@@ -64,20 +64,20 @@ const Section02: React.FC = () => {
   // };
 
   return (
-    <section className="py-20 bg-gray-50" style={{ backgroundColor: "#d5d5d5" }}>
+    <section className="py-20 bg-gray-50" style={{ backgroundColor: "#e6dccf" }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
         <div className="text-center mb-16">
           <h2
-            className={`text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold mb-6 text-gray-900 ${fontTitle.className}`}
+            className={`text-3xl md:text-[58px]  mb-6 text-gray-900 ${fontTitle.className}`}
           >
-            Un confort infiniment durable
+            Un luxe intemporel et inspirant
           </h2>
 
-          <p className="max-w-2xl mx-auto text-base leading-relaxed">
-  Nos intérieurs sont conçus pour durer, alliant confort et qualité
-  exceptionnelle. Chaque matériau a été choisi pour sa résistance et
-  son esthétique intemporelle, vous garantissant un espace agréable et
-  pérenne au fil des années.
+          <p className="max-w-5xl mx-auto text-base leading-relaxed text-sm md:text-[20px]">
+  D’un style épuré et d’une esthétique intégrant tous les codes de la sobriété intemporelle du luxe,
+ nos intérieurs à dominance thématique neutre et matériaux bruts vous permettent de laisser libre cours
+ à vos inspirations de décoration d’intérieur, telle une sublime page vierge pensée
+ pour devenir votre tableau de Maître.
 </p>
 
         </div>
@@ -88,7 +88,7 @@ const Section02: React.FC = () => {
               key={index}
               role="article"
               aria-label={apartment.title}
-              className="relative w-full h-[220px] sm:h-[320px] md:h-[420px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl"
+              className="relative w-full h-[220px] sm:h-[320px] md:h-[420px] lg:h-[600px]  overflow-hidden shadow-2xl"
             >
               <Image
                 src={apartment.image}

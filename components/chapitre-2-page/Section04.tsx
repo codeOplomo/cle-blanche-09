@@ -156,7 +156,7 @@ const Section04: React.FC = () => {
           className="absolute inset-0 flex items-center justify-center z-20 px-4 text-center"
         >
           <h2
-            className={`text-xl sm:text-2xl md:text-3xl lg:text-[40px] font-bold text-white leading-[1.08] drop-shadow-[0_4px_32px_rgba(0,0,0,0.8)] max-w-5xl mx-auto ${fontTitle.className}`}
+            className={`text-xl sm:text-2xl md:text-3xl lg:text-[40px] text-white leading-[1.08] drop-shadow-[0_4px_32px_rgba(0,0,0,0.8)] max-w-5xl mx-auto ${fontTitle.className}`}
             style={{ marginBottom: 0 }}
           >
             Le soleil pour invité

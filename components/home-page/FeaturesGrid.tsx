@@ -3,6 +3,15 @@
 import fontTitle from "@/lib/font";
 import { Leaf, MapPin, Building2, Gem, Sun, Trees } from "lucide-react";
 
+// Replace last regular space with a non-breaking space to avoid single-word orphans
+const preventOrphan = (text: string) => {
+  if (!text) return text;
+  const t = String(text).trim();
+  const lastSpace = t.lastIndexOf(" ");
+  if (lastSpace === -1) return t;
+  return t.slice(0, lastSpace) + "\u00A0" + t.slice(lastSpace + 1);
+};
+
 const features = [
   {
     title: (
@@ -17,31 +26,55 @@ const features = [
     icon: Leaf,
   },
   {
-    title: "Un emplacement exceptionnel au cœur de Souissi",
+    title: (
+      <>
+        Un emplacement exceptionnel au cœur
+        au cœur de Souissi
+      </>
+    ),
     description:
       "Un cadre de vie sans équivalent à Rabat, dans un quartier prestigieux, promesse de sérénité et de douceur de vivre, loin du tumulte de la ville et pourtant si proche.",
     icon: MapPin,
   },
   {
-    title: "Appartements et penthouses",
+    title: (
+      <>
+        Appartements
+        et penthouses
+      </>
+    ),
     description:
       "Des volumes épurés et fonctionnels inondés de lumière au style intemporel. Un large éventail de surfaces allant de 120 à 412 m².",
     icon: Building2,
   },
   {
-    title: "Matériaux d'exception et finitions haut standing",
+    title: (
+      <>
+        Matériaux d'exception et finitions
+        haut standing
+      </>
+    ),
     description:
       "Marbre, pierres nobles, domotique, climatisation centralisée… des aménagements contemporains de très haute qualité.",
     icon: Gem,
   },
   {
-    title: "De vastes et lumineuses terrasses",
+    title: (
+      <>
+        De vastes et lumineuses
+        terrasses
+      </>
+    ),
     description:
-      "Pensées comme de véritables espaces de vie, les terrasses sont dotées de vastes baies vitrées coulissantes qui se ferment et s’ouvrent au gré des saisons. ",
+      "Pensées comme de véritables espaces de vie, les terrasses sont dotées de vastes baies vitrées coulissantes qui se ferment et s’ouvrent au gré des saisons.",
     icon: Sun,
   },
   {
-    title: "Un environnement et apaisant",
+    title: (
+      <>
+        Un environnement et apaisant
+      </>
+    ),
     description:
       "Jardin paysagé où il fait bon s’assoir à l’ombre des pergolas, fraîcheur des fontaines, beauté des sculptures de Jamil Bennani, aire de jeux pour les enfants, salle de fitness… vous êtes bien à Clé Blanche.",
     icon: Trees,
@@ -76,7 +109,7 @@ const FeaturesGrid = () => {
               {feature.title}
             </h3>
             <p className="text-sm md:text-[20px]  text-gray-600 leading-relaxed text-center">
-              {feature.description}
+              {preventOrphan(String(feature.description))}
             </p>
           </div>
         ))}
