@@ -11,9 +11,9 @@ const Section04Marque = () => {
       data-aos="fade-right"
     >
       <div className="flex flex-col mb-12 md:mb-24 gap-10 container mx-auto text-base w-full">
-        <div className="px-4">
+        <div className="">
           {/* Full-bleed Image on top */}
-          <div className="w-screen relative left-1/2 -translate-x-1/2 max-w-none overflow-hidden aspect-square">
+          <div className="relative left-1/2 -translate-x-1/2 max-w-none overflow-hidden aspect-square">
             <Image
               src={"/new/IMG_8427-Migliorato-NR.jpg"}
               alt="Habiter plus Vert"
