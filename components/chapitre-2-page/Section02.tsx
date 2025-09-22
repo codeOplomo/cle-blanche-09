@@ -10,7 +10,7 @@ const Section02: React.FC = () => {
       title: "Appartement Plénitude 3",
       rooms: "2 chambres + salon",
       surface: "78 m² à 106 m²",
-      image: "/new/Intérieur_Salon duplex_01_Escalier retouché_2116mm x 1370mm_72dpi.jpg",
+      image: "/new/bg-cle-blanche.webp",
       type: "Plénitude",
     },
     {
@@ -21,14 +21,14 @@ const Section02: React.FC = () => {
       type: "Plénitude",
     },
     {
-      title: "Appartement amplitude 4",
+      title: "Appartement Amplitude 4",
       rooms: "3 chambres + salon + chambre de personnel",
       surface: "140 m² à 184 m²",
       image: "/new/Intérieur_Salon_01_1587mm x 1058mm_72dpi.jpg",
       type: "Amplitude",
     },
     {
-      title: "Appartement amplitude 5",
+      title: "Appartement Amplitude 5",
       rooms: "4 chambres + salon + chambre de personnel",
       surface: "182 m² à 226 m²",
       image: "/chapitre2/Section02/appartement-amplitude-5.jpg",
@@ -45,7 +45,7 @@ const Section02: React.FC = () => {
       title: "Penthouse 5",
       rooms: "4 chambres + salon + chambre de personnel",
       surface: "209 m² à 225 m²",
-      image: "/chapitre2/Section02/penthouse-5.jpg",
+      image: "/chapitre2/Section02/penthouse-5.webp",
       type: "Penthouse",
     },
   ];

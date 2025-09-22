@@ -29,10 +29,16 @@ const ContactInfoSection = () => {
       {/* Fix: Responsive container with proper constraints */}
       <div className="container mx-auto px-4 sm:px-5 lg:px-8 max-w-7xl" data-aos="fade-up">
         {/* Fix: Responsive grid with center alignment */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+        <div className="flex flex-col gap-8 sm:gap-12 lg:gap-16 items-center">
         
           {/* Contact Items - Fix: Better mobile responsiveness */}
-          <div className="flex flex-col gap-12 h-full justify-center">
+        
+       
+          {/* Form Section - Fix: Better mobile responsiveness */}
+          <div className="w-full max-w-3xl">
+            <FormContact />
+          </div>
+          <div className="grid grid-cols-3 gap-12 h-full justify-center">
             {contactItems.map((item, index) => (
               <div 
                 key={index}
@@ -67,11 +73,6 @@ const ContactInfoSection = () => {
                 </div>
               </div>
             ))}
-          </div>
-       
-          {/* Form Section - Fix: Better mobile responsiveness */}
-          <div className="lg:sticky lg:top-8">
-            <FormContact />
           </div>
         </div>
       </div>

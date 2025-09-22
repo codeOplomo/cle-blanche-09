@@ -35,8 +35,31 @@ const ContactHeroSection = () => {
       <div className="relative z-10 text-center px-5 max-w-5xl mx-auto pt-24 contact-hero-text">
         <div className="flex flex-col gap-2 mx-auto text-center mb-8">
           <SplitText
-            text="Bienvenue dans le show-room Clé Blanche"
-            className={`text-2xl md:text-4xl lg:text-5xl font-light tracking-wide text-white ${fontTitle.className}`}
+            text="Bienvenue dans le show-room"
+            className={`text-3xl md:text-[58px] font-light tracking-wide text-white ${fontTitle.className}`}
+            delay={40}
+            duration={1.4}
+            ease="power4.out"
+            splitType="words"
+            from={{
+              opacity: 0,
+              y: 30,
+              scale: 0.95,
+              rotationX: -15,
+            }}
+            to={{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              rotationX: 0,
+            }}
+            threshold={0.2}
+            rootMargin="-80px"
+            textAlign="center"
+          />
+          <SplitText
+            text="Clé Blanche"
+            className={`text-3xl md:text-[58px] font-light tracking-wide text-white ${fontTitle.className}`}
             delay={40}
             duration={1.4}
             ease="power4.out"

@@ -34,8 +34,7 @@ const Section01: React.FC = () => {
           <div className="space-y-4 text-base sm:text-lg px-4 sm:px-0" data-aos="fade-up">
             <p className="max-w-prose mx-auto lg:mx-0 leading-relaxed">
               À Clé Blanche, la lumière est chez elle. Elle glisse sur le marbre, effleure le noyer, 
-traverse d’immenses baies vitrées. Chaque espace respire, ouvert sur l’exté
-rieur, baigné d’une clarté changeante.
+traverse d’immenses baies vitrées. Chaque espace respire, ouvert sur l’extérieur, baigné d’une clarté changeante.
             </p>
 
             <p className="max-w-prose mx-auto lg:mx-0 leading-relaxed">

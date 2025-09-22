@@ -6,14 +6,14 @@ const ContactMapSection = () => (
   <section className="w-full bg-white overflow-x-hidden">
     {/* Heading */}
     <div className="flex flex-col my-8 md:my-16 lg:my-12 gap-4 md:gap-6 container mx-auto text-center px-4 md:px-0" data-aos="fade-up">
-      <h3 className={`text-3xl md:text-4xl leading-tight text-main-black ${fontTitle.className}`}>
+      <h3 className={`text-3xl md:text-[58px] font-light tracking-wide ${fontTitle.className}`}>
         Venir à Clé Blanche Souissi
       </h3>
 
       <p className="text-sm md:text-[20px] leading-[1.2] md:leading-[1.25] max-w-4xl mx-auto">
         Clé Blanche est très bien desservie et facilement accessible depuis la
         rocade de Rabat. Pour accéder à Google map, cliquez simplement sur la
-        carte ci-dessous. À très bientôt!
+        carte ci-dessous. <br /> À très bientôt!
       </p>
     </div>
 
