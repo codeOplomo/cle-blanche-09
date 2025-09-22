@@ -12,11 +12,11 @@ const Section01: React.FC = () => {
         >
           <div>
             <span
-              className={`text-2xl sm:text-3xl md:text-4xl lg:text-[58px] text-gray-900 mb-6  ${fontTitle.className}`}
+              className={`text-2xl sm:text-3xl md:text-4xl lg:text-[58px]  mb-6  ${fontTitle.className}`}
             >
               Des volumes épurés{" "}
-              <span className=" text-gray-900 ">baignés de lumière</span>{" "}
-              <span className="text-gray-900 wrap">aux finitions exceptionnelles</span>
+              <span className="">baignés de lumière</span>{" "}
+              <span className="wrap">aux finitions exceptionnelles</span>
             </span>
 
             {/* Feature list — placed outside the title span so it inherits paragraph font */}
@@ -31,7 +31,7 @@ const Section01: React.FC = () => {
             </ul>
           </div>
 
-          <div className="space-y-10 text-gray-700 text-base sm:text-lg px-4 sm:px-0" data-aos="fade-up">
+          <div className="space-y-4 text-base sm:text-lg px-4 sm:px-0" data-aos="fade-up">
             <p className="max-w-prose mx-auto lg:mx-0 leading-relaxed">
               À Clé Blanche, la lumière est chez elle. Elle glisse sur le marbre, effleure le noyer, 
 traverse d’immenses baies vitrées. Chaque espace respire, ouvert sur l’exté
@@ -61,7 +61,7 @@ const Feature: React.FC<{ text: string }> = ({ text }) => (
 
     {/* block-level text with padding for larger touch target on mobile; keyboard focus visible */}
     <span
-      className="text-lg text-gray-600 py-2 px-2 rounded-md block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-main"
+      className="text-lg  py-2 px-2 rounded-md block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-main"
       tabIndex={0}
       aria-label={text}
     >
