@@ -64,7 +64,7 @@ const GalerieImage = () => {
             <div className="relative group overflow-hidden"  data-aos="fade-right">
               <div className="relative w-full h-[400px]">
                 <Image
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full object-cover h-full transition-transform duration-500 group-hover:scale-110"
                   src={item.picture}
                   alt={item.title}
                   width={500}
