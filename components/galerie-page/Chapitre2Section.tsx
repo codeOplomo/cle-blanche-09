@@ -9,28 +9,24 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const chapitre2Images = [
-  "/Galeriee/Chapitre 02/E01.jpg",
-  "/Galeriee/Chapitre 02/E02.jpg",
-  "/Galeriee/Chapitre 02/E03.jpg",
   "/Galeriee/Chapitre 02/E04.jpg",
+  "/houses/APPARTEMENT-PLENITUDE-3.webp",
+  "/inter.webp",
+  "/Galeriee/Chapitre 02/E05.jpg",
   "/Galeriee/Chapitre 02/SALLE DE SPORT.jpg",
 ];
 
 const Chapitre2Section = () => {
   return (
-    <section className="py-12" data-aos="fade-up">
+    <section className="py-12 bg-[#e6dccf]" data-aos="fade-up">
       <div className="flex flex-col items-center justify-center">
         {/* Title */}
         <div className="w-full max-w-4xl mx-auto px-4">
           <h2
-            className={`text-2xl md:text-3xl lg:text-4xl font-bold text-main-black mb-4 text-center ${fontTitle.className}`}
+            className={`text-3xl md:text-[58px] text-main-black mb-4 text-center ${fontTitle.className}`}
           >
-            Un deuxième et dernier chapitre qui perpétue l&apos;esprit Clé Blanche phase II.
+            Un deuxième et dernier chapitre <br/>qui perpétue l’esprit Clé Blanche
           </h2>
-          <p className="text-sm md:text-base text-gray-600 text-center max-w-3xl mx-auto mb-8">
-            Des espaces revisités, où chaque détail contribue à réécrire
-            l&apos;art de vivre contemporain.
-          </p>
         </div>
 
         {/* Swiper with navigation arrows */}
@@ -56,7 +52,7 @@ const Chapitre2Section = () => {
           >
             {chapitre2Images.map((src, idx) => (
               <SwiperSlide key={idx}>
-                <div className="group relative overflow-hidden rounded-xl shadow-lg aspect-video">
+                <div className="group relative overflow-hidden shadow-lg aspect-video">
                   <Image
                     src={src}
                     alt={`Chapitre 2 image ${idx + 1}`}

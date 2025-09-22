@@ -24,17 +24,20 @@ const TemoinSection = () => {
   return (
     <section className="mb-8">
       <div
-        className="flex flex-col items-center justify-center"
+        className="flex flex-col pt-12 items-center justify-center"
         data-aos="fade-up"
       >
         {/* Title */}
         <h2
           className={`text-2xl md:text-3xl lg:text-4xl font-bold text-main-black mb-4 text-center ${fontTitle.className}`}
         >
-          Notre appartement témoin
+         Vivez l’esprit Clé Blanche <br/>
+ dans notre appartement témoin
         </h2>
         <p className="text-sm md:text-base text-gray-600 text-center max-w-3xl mb-8">
-          {`Clé Blanche vous ouvre les portes de son appartement témoin. Un espace aménagé avec soin pour vous permettre de visualiser votre futur quotidien, de ressentir l'harmonie des volumes, la qualité des finitions et la chaleur des intérieurs.`}
+          {` Clé Blanche vous ouvre les portes de son appartement témoin. Un espace aménagé et décoré
+ avec soin où vous pouvez plus aisément vous projeter dans votre futur appartement,
+ de ressentir l’harmonie des volumes, la qualité des finitions, et la luminosité des intérieurs.`}
         </p>
 
         {/* Swiper with navigation arrows */}
