@@ -14,7 +14,7 @@ const Section01Marque = () => {
  fruit d’un partenariat d’excellence entre Rachid Lazrak et Mouatassim Belghazi.
  Clé Blanche Souissi, premier projet emblématique de la marque, matérialise cette vision centrée autour de la qualité,
  de la recherche d’innovation et de l’expérience du nouvel habitat.
- Aujourd’hui, après la livraison des 239 appartements du premier chapitre de Clé Blanche Souissi à Rabat,
+ Aujourd’hui, après la livraison des 239 appartements du premier chapitre  <br /> de Clé Blanche Souissi à Rabat,
  un deuxième et dernier chapitre de 139 appartements est en cours de construction et, prochainement,
  Casablanca s’apprête à accueillir un projet Clé Blanche.
       </p>

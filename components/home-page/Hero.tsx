@@ -88,7 +88,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 12, scale: 1.01 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ delay: 0.12, duration: 2.0, ease: "easeOut" }}
-              className={`text-sm md:text-[20px] font-extralight tracking-wider max-w-4xl mx-auto leading-snug ${fontTitle.className} font-semibold text-center`}
+              className={`text-sm md:text-[20px] font-extralight tracking-wider max-w-4xl mx-auto leading-snug text-center mt-6 text-white text-sm md:text-[20px]`}
             >
               Deuxième et dernière tranche. Une opportunité unique.
             </motion.p>

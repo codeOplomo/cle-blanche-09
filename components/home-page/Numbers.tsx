@@ -19,8 +19,8 @@ const Numbers = () => {
   ];
   return (
     <div
-      className="mt-24 bg-cover bg-center"
-      style={{ backgroundImage: `url(/e01.webp)` }}
+      className="mt-24 bg-cover bg-bottom"
+      style={{ backgroundImage: `url(/Jardin_Pergolas-aluminium_Fontaine_Entrée-immeuble.webp)` }}
     >
       <div className="py-24 w-full h-full  bg-[#0000008c] transition-opacity duration-700">
         <div className="container mx-auto text-white px-5">
@@ -30,9 +30,9 @@ const Numbers = () => {
           >
             {/* <h2 className="text-sm lg:text-lg">Clé Blanche Souissi</h2> */}
             <p
-              className={`text-3xl md:text-[58px] font-semibold text-second ${fontTitle.className}`}
+              className={`text-3xl md:text-[58px] text-second ${fontTitle.className}`}
             >
-              Un écrin de verdure<br/> promesse de sérénité.
+              Un écrin de verdure<br/> promesse de sérénité
             </p>
           </div>
           <div className="grid lg:grid-cols-3 lg:divide-x-2 divide-white/80  lg:mt-24 lg:border-l-2 lg:border-r-2 lg:border-white/80">
