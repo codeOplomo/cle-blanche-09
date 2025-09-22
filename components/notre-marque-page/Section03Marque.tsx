@@ -56,11 +56,14 @@ export default function Section03Marque() {
                 style={{ zIndex: 10 }}
               >
                 {/* Opening quotation mark - proper left quote */}
-                <img
-                  src="/Guillemet_01.svg"
-                  alt="Opening quote"
-                  className="w-16 h-16 md:w-20 md:h-20 opacity-60 mb-4 absolute top-8 left-8"
-                />
+                <Image
+  src="/Guillemet_01.svg"
+  alt="Opening quote"
+  width={80}   // give width/height for Next optimization
+  height={80}
+  className="w-16 h-16 md:w-20 md:h-20 opacity-60 mb-4 absolute top-8 left-8"
+/>
+
 
 
                 <h3
@@ -95,11 +98,14 @@ export default function Section03Marque() {
                   </div>
                   <div className="mt-8 text-sm text-white text-center">
                     <div>Boubker SEFRIOUI</div>
-                    <img
-                      src="/signature/Signature_BoubkerSEFRIOUI_Blanche.webp"
-                      alt="Signature Boubker Sefrioui"
-                      className="mt-2 w-40 h-auto object-contain"
-                    />
+                    <Image
+  src="/signature/Signature_BoubkerSEFRIOUI_Blanche.webp"
+  alt="Signature Boubker Sefrioui"
+  width={160} // base width (px), Tailwind will still control final size
+  height={60} // arbitrary height, since h-auto keeps proportions
+  className="mt-2 w-40 h-auto object-contain"
+/>
+
                   </div>
                   <div className="flex justify-end mt-6">
                     {/* Closing quotation mark - proper right quote */}
