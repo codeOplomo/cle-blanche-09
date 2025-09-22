@@ -94,7 +94,7 @@ const FormContact = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.nom}
-                className="border-second h-10 sm:h-12 text-sm sm:text-base"
+                className="border-second h-10 sm:h-12 text-sm sm:text-base rounded-none"
               />
               {formik.touched.nom && formik.errors.nom && (
                 <div className="text-red-500 text-xs sm:text-sm">{formik.errors.nom}</div>
@@ -112,7 +112,7 @@ const FormContact = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.prenom}
-                className="border-second h-10 sm:h-12  text-sm sm:text-base"
+                className="border-second h-10 sm:h-12  text-sm sm:text-base rounded-none"
               />
               {formik.touched.prenom && formik.errors.prenom && (
                 <div className="text-red-500 text-xs sm:text-sm">{formik.errors.prenom}</div>
@@ -163,7 +163,7 @@ const FormContact = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.email}
-                className="border-second h-10 sm:h-12  text-sm sm:text-base"
+                className="border-second h-10 sm:h-12  text-sm sm:text-base rounded-none"
               />
               {formik.touched.email && formik.errors.email && (
                 <div className="text-red-500 text-xs sm:text-sm">{formik.errors.email}</div>
@@ -183,7 +183,7 @@ const FormContact = () => {
                 onBlur={formik.handleBlur}
                 value={formik.values.message}
                 rows={5}
-                className="border-second text-sm sm:text-base resize-none min-h-[120px] sm:min-h-[140px]"
+                className="border-second text-sm sm:text-base resize-none min-h-[120px] sm:min-h-[140px] rounded-none"
               />
               {formik.touched.message && formik.errors.message && (
                 <div className="text-red-500 text-xs sm:text-sm">{formik.errors.message}</div>
