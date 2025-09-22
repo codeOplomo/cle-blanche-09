@@ -26,23 +26,13 @@ const features = [
     icon: Leaf,
   },
   {
-    title: (
-      <>
-        Un emplacement exceptionnel au cœur
-        au cœur de Souissi
-      </>
-    ),
+    title: <>Un emplacement exceptionnel au cœur au cœur de Souissi</>,
     description:
       "Un cadre de vie sans équivalent à Rabat, dans un quartier prestigieux, promesse de sérénité et de douceur de vivre, loin du tumulte de la ville et pourtant si proche.",
     icon: MapPin,
   },
   {
-    title: (
-      <>
-        Appartements
-        et penthouses
-      </>
-    ),
+    title: <>Appartements et penthouses</>,
     description:
       "Des volumes épurés et fonctionnels inondés de lumière au style intemporel. Un large éventail de surfaces allant de 120 à 412 m².",
     icon: Building2,
@@ -50,8 +40,8 @@ const features = [
   {
     title: (
       <>
-        Matériaux d'exception et finitions
-        haut standing
+        {`Matériaux d'exception et finitions
+        haut standing`}
       </>
     ),
     description:
@@ -59,22 +49,13 @@ const features = [
     icon: Gem,
   },
   {
-    title: (
-      <>
-        De vastes et lumineuses
-        terrasses
-      </>
-    ),
+    title: <>De vastes et lumineuses terrasses</>,
     description:
       "Pensées comme de véritables espaces de vie, les terrasses sont dotées de vastes baies vitrées coulissantes qui se ferment et s’ouvrent au gré des saisons.",
     icon: Sun,
   },
   {
-    title: (
-      <>
-        Un environnement et apaisant
-      </>
-    ),
+    title: <>Un environnement et apaisant</>,
     description:
       "Jardin paysagé où il fait bon s’assoir à l’ombre des pergolas, fraîcheur des fontaines, beauté des sculptures de Jamil Bennani, aire de jeux pour les enfants, salle de fitness… vous êtes bien à Clé Blanche.",
     icon: Trees,
