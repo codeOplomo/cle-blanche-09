@@ -40,7 +40,7 @@ const Prensetation = () => {
           entre intérieur et extérieur.
         </p>
         <p className={`text-lg md:text-2xl`}>
-          Un nouveau chapitre et l'excellence en héritage
+          Un nouveau chapitre et l&apos;excellence en héritage
         </p>
         <p>
           Dans la continuité de la première phase, le second chapitre Clé
