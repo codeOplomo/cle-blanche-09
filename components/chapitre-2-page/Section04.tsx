@@ -90,7 +90,7 @@ const Section04: React.FC = () => {
       >
         {/* Image avant (left) */}
         <NextImage
-          src="/penthouse111.jpeg"
+          src="/penthouse111.webp"
           alt="Avant - vue extérieure du penthouse"
           className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
           draggable={false}
@@ -101,7 +101,7 @@ const Section04: React.FC = () => {
 
         {/* Image après (right) clipped from left by percent */}
         <NextImage
-          src="/interieurterrassepenthousesoirretouche01635mm-x-412mm300dpi.jpg"
+          src="/interieurterrassepenthousesoirretouche01635mm-x-412mm300dpi.webp"
           alt="Après - intérieur / terrasse"
           className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
           style={{

@@ -31,15 +31,15 @@ const Section04Marque = () => {
             {/* Left title/label (vertical feel in the design image). Keep it compact */}
             <div className="md:w-1/4 flex-shrink-0 ">
               <div className={`${fontTitle.className} text-xl md:text-2xl font-bold text-main-black`}>
-                <span className="leading-tight block md:hidden whitespace-nowrap">Habiter plus Vert</span>
-                <span className="leading-tight hidden md:block">Habiter<br />plus Vert</span>
+                <span className={`text-3xl md:text-[58px] font-light tracking-wide leading-none ${fontTitle.className}`}>Habiter plus Vert</span>
+                {/* <span className="leading-tight hidden md:block">Habiter<br />plus Vert</span> */}
               </div>
             </div>
 
             {/* Right content: single flowing paragraph (no columns) */}
-            <div className="md:w-3/4 bg-white/0 text-sm md:text-[20px] text-black leading-tight">
+            <div className="md:w-3/4 bg-white/0 text-black">
               <div className="text-black">
-                <p className="mb-0">{body}</p>
+                <p className="text-sm md:text-base leading-relaxed">{body}</p>
               </div>
             </div>
             </div>

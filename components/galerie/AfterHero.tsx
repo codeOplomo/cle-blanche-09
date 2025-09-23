@@ -1,5 +1,5 @@
 import React from 'react';
-import fontTitle from '@/lib/font';
+// import fontTitle from '@/lib/font';
 
 const AfterHero: React.FC = () => {
   return (
