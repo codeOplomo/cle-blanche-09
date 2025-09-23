@@ -26,31 +26,24 @@ const ContactInfoSection = () => {
 
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
-      {/* Fix: Responsive container with proper constraints */}
       <div className="container mx-auto px-4 sm:px-5 lg:px-8 max-w-7xl" data-aos="fade-up">
-        {/* Fix: Responsive grid with center alignment */}
         <div className="flex flex-col gap-8 sm:gap-12 lg:gap-16 items-center">
-        
-          {/* Contact Items - Fix: Better mobile responsiveness */}
-        
-       
-          {/* Form Section - Fix: Better mobile responsiveness */}
           <div className="w-full max-w-3xl">
             <FormContact />
           </div>
-          <div className="grid grid-cols-3 gap-12 h-full justify-center">
+
+          {/* Mobile: stacked (1 column). Small+ screens: 3 columns */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-12 gap-y-6 sm:gap-y-0 w-full">
             {contactItems.map((item, index) => (
               <div 
                 key={index}
-                className="group bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 w-full max-w-full"
+                className="group bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 w-full"
               >
                 <div className="flex items-start gap-3 sm:gap-4">
-                  {/* Fix: Responsive icon container */}
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-main/10 rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-main/20 transition-colors duration-300">
                     <item.icon className="w-5 h-5 sm:w-6 sm:h-6 text-main-black" />
                   </div>
                   
-                  {/* Fix: Content with proper text wrapping */}
                   <div className="flex-1 min-w-0 max-w-full">
                     <div className="flex items-center justify-between mb-2">
                       <span className="font-semibold text-gray-900 text-sm sm:text-base">{item.label}</span>
@@ -64,7 +57,6 @@ const ContactInfoSection = () => {
                     </a>
                   </div>
                   
-                  {/* Fix: Responsive external link icon */}
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex-shrink-0">
                     <svg className="w-4 h-4 sm:w-5 sm:h-5 text-main-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -74,6 +66,7 @@ const ContactInfoSection = () => {
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>
