@@ -7,8 +7,7 @@ const BackgroundVideo: React.FC = () => {
   // Use LazyVideo so the heavy media sources are only added when the element
   // intersects the viewport. Keep the container absolutely positioned.
   const sources = [
-    { src: "/CLE BLANCHE_compressed.webm", type: "video/webm" },
-    { src: "/bg-background-banner.mp4", type: "video/mp4" },
+    { src: "/bg-background-banner.webm", type: "video/webm" },
   ];
 
   return (
