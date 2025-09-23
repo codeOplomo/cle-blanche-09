@@ -24,10 +24,10 @@ const ContactHeroSection = () => {
       <div className="absolute inset-0 w-full h-full">
         <Image
           src="/contact/IMG_3450.JPG"
-          alt="Équipe Clé Blanche à votre service"
+          alt="\u00c9quipe Cl\u00e9 Blanche \u00e0 votre service"
           fill
           className="object-cover"
-          priority
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
       </div>

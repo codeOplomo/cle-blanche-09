@@ -95,8 +95,7 @@ const Section02: React.FC = () => {
                 alt={apartment.title}
                 fill
                 className="object-cover w-full h-full"
-                priority={index === 0}
-                loading={index === 0 ? "eager" : "lazy"}
+                loading="lazy"
               />
 
               {/* stronger overlay on small screens for contrast, slightly lighter on larger */}

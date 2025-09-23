@@ -96,7 +96,7 @@ const Section04: React.FC = () => {
           draggable={false}
           fill
           sizes="100vw"
-          priority
+          loading="lazy"
         />
 
         {/* Image après (right) clipped from left by percent */}
@@ -112,7 +112,7 @@ const Section04: React.FC = () => {
           draggable={false}
           fill
           sizes="100vw"
-          priority
+          loading="lazy"
         />
 
         {/* Overlay gradient — stronger on small screens for contrast */}

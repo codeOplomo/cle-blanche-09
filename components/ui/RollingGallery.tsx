@@ -170,7 +170,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
                 width={300}
                 height={120}
                 style={{ width: '100%', height: 'auto' }}
-                priority
+                loading="lazy"
               />
             </div>
           ))}

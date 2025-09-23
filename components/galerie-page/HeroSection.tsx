@@ -20,7 +20,7 @@ const HeroSection = () => (
         alt=""
         fill
         className="object-cover"
-        priority
+        loading="lazy"
       />
       <div className="absolute inset-0 bg-gradient-to-br from-main/70 via-black/40 to-main/60"></div>
     </div>

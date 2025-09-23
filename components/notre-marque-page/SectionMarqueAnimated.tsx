@@ -52,7 +52,7 @@ const SectionMarqueAnimated = () => {
             fill
             className="object-cover object-center scale-100 group-hover:scale-110 group-hover:brightness-75 transition-all duration-700 ease-out"
             style={{ zIndex: 1 }}
-            priority={idx === 0}
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/60 group-hover:from-black/30 group-hover:to-black/80 transition-all duration-700 z-10" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-20">

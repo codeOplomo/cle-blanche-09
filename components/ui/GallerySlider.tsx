@@ -31,7 +31,7 @@ const GallerySlider: React.FC<GallerySliderProps> = ({ images }) => {
                 alt={`Galerie image ${idx + 1}`}
                 fill
                 className="object-cover rounded-2xl"
-                priority={idx === 0}
+                loading="lazy"
               />
             </div>
           </SwiperSlide>
