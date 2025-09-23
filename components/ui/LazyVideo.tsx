@@ -92,7 +92,7 @@ const LazyVideo: React.FC<Props> = ({
         });
       }
     } catch (e) {
-      // ignore
+      void e;
     }
   }, [isVisible, sources, src, hasLoadedSrc, lazyAutoPlay, muted, autoPlay]);
 
