@@ -1,25 +1,25 @@
 "use client";
 // BackgroundVideo.tsx
-import React, { useRef } from "react";
+import React from "react";
+import LazyVideo from "@/components/ui/LazyVideo";
 
 const BackgroundVideo = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const src = "https://cleblanche-wine.vercel.app/bg-background-banner.mp4";
 
   return (
     <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-[-1]">
-      <video
-        ref={videoRef}
-        autoPlay
+      <LazyVideo
+        className="w-full h-full object-cover"
+        preload="none"
         muted
+        autoPlay
         loop
         playsInline
-        //   preload="none"
-        className="w-full h-full object-cover"
+        lazyAutoPlay={true}
+        sources={[{ src, type: 'video/mp4' }]}
       >
-        <source src="https://cleblanche-wine.vercel.app/bg-background-banner.mp4" type="video/webm" />
-
         Your browser does not support the video tag.
-      </video>
+      </LazyVideo>
     </div>
   );
 };
