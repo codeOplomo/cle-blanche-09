@@ -12,7 +12,7 @@ import fontTitle from "@/lib/font";
 const GalerieImage = () => {
   const options = [
     {
-      picture: "/boxes/jardins.jpeg",
+      picture: "/boxes/jardins.webp",
       title: "Cœur d’ilots",
     },
     {
@@ -20,11 +20,11 @@ const GalerieImage = () => {
       title: "Fitness Center",
     },
     {
-      picture: "/boxes/fontaines.jpeg",
+      picture: "/boxes/fontaines.webp",
       title: "Fontaines",
     },
     {
-      picture: "/boxes/terrases.jpeg",
+      picture: "/boxes/terrases.webp",
       title: "Terrasses",
     },
     {
