@@ -114,9 +114,11 @@ export default function Section03Marque() {
                     {/* Closing quotation mark - proper right quote */}
                     <div className="flex justify-end mt-6">
                       {/* Closing quotation mark - proper right quote */}
-                      <img
+                      <Image
                         src="/Guillemet_02.svg"
                         alt="Closing quote"
+                        width={64}
+                        height={64}
                         className="w-12 h-12 md:w-16 md:h-16 opacity-60 mt-6 absolute bottom-6 left-6"
                       />
                     </div>

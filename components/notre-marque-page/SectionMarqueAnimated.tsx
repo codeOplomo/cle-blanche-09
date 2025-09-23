@@ -41,7 +41,7 @@ const SectionMarqueAnimated = () => {
       ref={sectionRef}
       className={`w-full flex flex-col md:flex-row gap-0 items-stretch ${visible ? "animate-fade-in-up" : ""}`}
     >
-      {cards.map((card, idx) => (
+  {cards.map((card) => (
         <div
           key={card.title}
           className="group relative w-full md:flex-1 h-[300px] md:h-[420px] overflow-hidden cursor-pointer transition-all duration-500"
