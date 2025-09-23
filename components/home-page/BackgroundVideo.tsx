@@ -16,7 +16,7 @@ const BackgroundVideo = () => {
         //   preload="none"
         className="w-full h-full object-cover"
       >
-        <source src="https://cleblanche-wine.vercel.app/bg-background-banner.mp4" type="video/webm" />
+        <source src="/bg-background-banner.mp4" type="video/webm" />
 
         Your browser does not support the video tag.
       </video>
