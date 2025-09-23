@@ -57,12 +57,12 @@ export default function Section03Marque() {
               >
                 {/* Opening quotation mark - proper left quote */}
                 <Image
-  src="/Guillemet_01.svg"
-  alt="Opening quote"
-  width={80}   // give width/height for Next optimization
-  height={80}
-  className="w-16 h-16 md:w-20 md:h-20 opacity-60 mb-4 absolute top-8 left-8"
-/>
+                  src="/Guillemet_01.svg"
+                  alt="Opening quote"
+                  width={80}   // give width/height for Next optimization
+                  height={80}
+                  className="w-16 h-16 md:w-20 md:h-20 opacity-60 mb-4 absolute top-8 left-8"
+                />
 
 
 
@@ -72,7 +72,7 @@ export default function Section03Marque() {
                   Le mot des Architectes
                 </h3>
                 <p className="mt-6 text-white text-sm md:text-[20px] max-w-5xl mx-auto">
-                  
+
                   Nous avons pensé Clé Blanche comme une alliance entre la
                   matière et le temps. Une architecture minérale, chaleureuse et
                   ancrée dans son époque, où chaque texture et chaque détail
@@ -91,35 +91,34 @@ export default function Section03Marque() {
                     <div>Amine KANOUNI</div>
                     {/* place signature image exported from PSD as PNG/JPG in public/signature */}
                     <Image
-  src="/signature/Signature_AmineKANOUNI_Blanche.webp"
-  alt="Signature Amine Kanouni"
-  width={160} // base width in px
-  height={60} // just a placeholder, since h-auto keeps proportions
-  className="mt-2 w-40 h-auto object-contain"
-/>
+                      src="/signature/Signature_AmineKANOUNI_Blanche.webp"
+                      alt="Signature Amine Kanouni"
+                      width={160} // base width in px
+                      height={60} // just a placeholder, since h-auto keeps proportions
+                      className="mt-2 w-40 mx-auto h-auto object-contain"
+                    />
 
                   </div>
                   <div className="mt-8 text-sm text-white text-center">
                     <div>Boubker SEFRIOUI</div>
                     <Image
-  src="/signature/Signature_BoubkerSEFRIOUI_Blanche.webp"
-  alt="Signature Boubker Sefrioui"
-  width={160} // base width (px), Tailwind will still control final size
-  height={60} // arbitrary height, since h-auto keeps proportions
-  className="mt-2 w-40 h-auto object-contain"
-/>
+                      src="/signature/Signature_BoubkerSEFRIOUI_Blanche.webp"
+                      alt="Signature Boubker Sefrioui"
+                      width={160} // base width (px), Tailwind will still control final size
+                      height={60} // arbitrary height, since h-auto keeps proportions
+                      className="mt-2 w-40 h-auto object-contain mx-auto"
+                    />
 
                   </div>
                   <div className="flex justify-end mt-6">
                     {/* Closing quotation mark - proper right quote */}
                     <div className="flex justify-end mt-6">
                       {/* Closing quotation mark - proper right quote */}
-                                        <img
-                    src="/Guillemet_02.svg"
-                    alt="Closing quote"
-                    className="w-12 h-12 md:w-16 md:h-16 opacity-60 mt-6 absolute bottom-6 left-6"
-                  />
-
+                      <img
+                        src="/Guillemet_02.svg"
+                        alt="Closing quote"
+                        className="w-12 h-12 md:w-16 md:h-16 opacity-60 mt-6 absolute bottom-6 left-6"
+                      />
                     </div>
                   </div>
                 </div>

@@ -37,7 +37,7 @@ const Chapitre2Page = () => {
               delay={40}
               duration={1.4}
               ease="power4.out"
-              splitType="chars"
+              splitType="words"
               from={{
                 opacity: 0,
                 y: 30,
@@ -60,7 +60,7 @@ const Chapitre2Page = () => {
               delay={60}
               duration={1.4}
               ease="power4.out"
-              splitType="chars"
+              splitType="words"
               from={{
                 opacity: 0,
                 y: 35,

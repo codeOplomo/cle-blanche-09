@@ -22,7 +22,7 @@ const Hero = () => {
               delay={80}
               duration={1.8}
               ease="power3.out"
-              splitType="chars"
+              splitType="words"
               from={{
                 opacity: 0,
                 y: 15,
@@ -44,7 +44,7 @@ const Hero = () => {
               delay={100}
               duration={1.8}
               ease="power3.out"
-              splitType="chars"
+              splitType="words"
               from={{
                 opacity: 0,
                 y: 12,
@@ -65,7 +65,7 @@ const Hero = () => {
               delay={100}
               duration={1.8}
               ease="power3.out"
-              splitType="chars"
+              splitType="words"
               from={{
                 opacity: 0,
                 y: 12,

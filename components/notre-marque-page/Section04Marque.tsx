@@ -27,7 +27,7 @@ const Section04Marque = () => {
           {/* Text with left title block and right flowing two-column text */}
           {/* constrain the text block width and center it under the full-bleed image */}
           <div className="mt-20">
-            <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-6 ">
+            <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-6 px-6 md:px-0 ">
             {/* Left title/label (vertical feel in the design image). Keep it compact */}
             <div className="md:w-1/4 flex-shrink-0 ">
               <div className={`${fontTitle.className} text-xl md:text-2xl font-bold text-main-black`}>

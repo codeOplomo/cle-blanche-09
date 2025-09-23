@@ -10,7 +10,7 @@ const Section01: React.FC = () => {
           className="grid grid-cols-1 lg:grid-cols-2 gap-16 sm:gap-12 lg:gap-18 items-center"
           data-aos="fade-left"
         >
-          <div>
+          <div className="px-4 md:px-0" >
             <span
               className={`text-2xl sm:text-3xl md:text-4xl lg:text-[58px]  mb-6  ${fontTitle.className}`}
             >
