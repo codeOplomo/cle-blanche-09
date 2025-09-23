@@ -1,4 +1,5 @@
 import React from "react";
+import LazyVideo from "@/components/ui/LazyVideo";
 // import fontTitle from "@/lib/font";
 
 const Chapitre1Section = () => {
@@ -42,20 +43,22 @@ const Chapitre1Section = () => {
       <div className="video-container w-full relative">
         <div className="w-full">
           <div className="w-full overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-            <video
-              className="w-full h-[50vh] sm:h-[60vh] lg:h-[80vh] object-cover"
-              autoPlay
-              muted
-              loop
-              playsInline
-              controls
-            >
-              <source
-                src="/CLE BLANCHE_compressed.webm"
-                type="video/webm"
-              />
-              <p>Your browser doesn&apos;t support HTML5 video.</p>
-            </video>
+            {/* Lazy-load the video when the container scrolls into view */}
+            <div>
+              <LazyVideo
+                className="w-full h-[50vh] sm:h-[60vh] lg:h-[80vh] object-cover"
+                preload="none"
+                controls
+                muted
+                autoPlay
+                loop
+                playsInline
+                lazyAutoPlay={true}
+                sources={[{ src: '/CLE BLANCHE_compressed.webm', type: 'video/webm' }]}
+              >
+                <p>Your browser doesn&apos;t support HTML5 video.</p>
+              </LazyVideo>
+            </div>
           </div>
         </div>
       </div>
@@ -63,16 +66,29 @@ const Chapitre1Section = () => {
       {/* Reveal effect */}
       <script
         dangerouslySetInnerHTML={{
-          __html: `
+            __html: `
           if (typeof window !== 'undefined') {
             const observer = new IntersectionObserver((entries) => {
               entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                   entry.target.classList.add('visible');
+
+                  // Try to load and autoplay any video inside the observed container.
+                  try {
+                    const video = entry.target.querySelector && entry.target.querySelector('video');
+                    if (video) {
+                      // make sure it's muted (browsers allow muted autoplay)
+                      try { video.muted = true; } catch (e) {}
+                      try { video.load(); } catch (e) {}
+                      video.play && video.play().catch(() => {});
+                    }
+                  } catch (e) {
+                    // ignore
+                  }
                 }
               });
             }, { threshold: 0.2, rootMargin: '0px 0px -10% 0px' });
-            
+
             const initAnimation = () => {
               const videoContainer = document.querySelector('.video-container > div');
               if (videoContainer) {
@@ -80,7 +96,7 @@ const Chapitre1Section = () => {
                 observer.observe(videoContainer);
               }
             };
-            
+
             if (document.readyState === 'loading') {
               document.addEventListener('DOMContentLoaded', initAnimation);
             } else {
