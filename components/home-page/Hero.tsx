@@ -3,8 +3,14 @@
 import React from "react";
 import SplitText from "../ui/SplitText";
 import { motion } from "framer-motion";
-import BackgroundVideo from "./BackgroundVideo";
+import dynamic from "next/dynamic";
 import fontTitle from "@/lib/font";
+
+// Dynamically import the background video so it doesn't bloat the initial JS bundle.
+const BackgroundVideo = dynamic(() => import("./BackgroundVideo"), {
+  ssr: false,
+  loading: () => null,
+});
 
 const Hero = () => {
   return (
