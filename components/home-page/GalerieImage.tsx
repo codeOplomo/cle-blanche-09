@@ -16,7 +16,7 @@ const GalerieImage = () => {
       title: "Cœur d’ilots",
     },
     {
-      picture: "/boxes/salle-de-sport.jpeg",
+      picture: "/boxes/salle-de-sport.webp",
       title: "Fitness Center",
     },
     {
