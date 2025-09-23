@@ -90,11 +90,14 @@ export default function Section03Marque() {
                   <div className="mt-8 text-sm text-white text-center">
                     <div>Amine KANOUNI</div>
                     {/* place signature image exported from PSD as PNG/JPG in public/signature */}
-                    <img
-                      src="/signature/Signature_AmineKANOUNI_Blanche.webp"
-                      alt="Signature Amin Kanduni"
-                      className="mt-2 w-40 h-auto object-contain"
-                    />
+                    <Image
+  src="/signature/Signature_AmineKANOUNI_Blanche.webp"
+  alt="Signature Amine Kanouni"
+  width={160} // base width in px
+  height={60} // just a placeholder, since h-auto keeps proportions
+  className="mt-2 w-40 h-auto object-contain"
+/>
+
                   </div>
                   <div className="mt-8 text-sm text-white text-center">
                     <div>Boubker SEFRIOUI</div>
